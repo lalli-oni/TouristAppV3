@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="b1e78c10-a2ac-4f24-bb0f-e5a3542ad43c" name="UMLUseCaseDiagram1" linkedPackageId="3b3202b6-805e-47ce-a9de-bbe859cab915" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="fccc786f-0725-41b8-93ff-ecd42317e6f1">
+      <elementDefinition Id="e6c7c259-26a6-45d4-9fd5-37e59e996b8a" />
+      <body>Start Program
+Show Log-In Page
+User pushes Create Account Button
+GoTo Sign-Up Page which queries for user name and password
+-XXX User enters unregisteres user information
+-XXXXXX Popup box tells user he entered wrong information
+-XXXXXXXXXX User closes Popup box
+User enters user name and password and presses Log In
+System takes information and adds it as account
+GoTo Log-In Page
+User enters correct Log-In information
+GoTo MainPageView
+User selects Restaurant Group
+GoTo GroupPageView(Restaurants)
+User selects McDonalds(Restaurant)
+GoTo ItemPageView(McDonalds)
+User reads the data retrieved
+User closes Application</body>
+      <annotatedElements>
+        <useCaseMoniker Id="e32ac1e5-2d9b-4c61-80c2-057ad4044ac4" LastKnownName="New Users Finds Restaurant" />
+      </annotatedElements>
+    </comment>
+    <comment Id="735b5abb-dcc6-4ccf-8790-0cbc813aea80">
+      <elementDefinition Id="191492e0-d0bf-4414-83a2-ac8b90c54c41" />
+      <body>Start Program
+Show Log-In Page
+User enters correct Log-In information
+GoTo MainPageView
+User selects Nightlife Group
+GoTo GroupPageView(Nightlifes)
+User selects Gimle(Nightlife)
+GoTo ItemPageView(Gimle)
+User reads the data retrieved
+User presses back button
+GoTo GroupPageView(Nightlifes)
+User selects IP&amp;Marys(Nightlife)
+GoTo ItemPageView(IP&amp;Marys)
+User reads the data retrieved
+User closes Application</body>
+      <annotatedElements>
+        <useCaseMoniker Id="a7625b1b-9790-46e3-be6f-6a781a88216e" LastKnownName="Existing User Finds Nightclub" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="5bc7ea34-2c22-40b1-b8cd-325407e4b0da">
+      <profileInstance Id="e68e784b-6ad7-4c15-9e44-25867266942b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="10a71bc3-d3a3-4001-9a88-d0d1df4e83fc">
+      <profileInstance Id="e56c82bc-32a2-49a9-9d6d-8981e160bb12" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="220821d8-986b-42e8-b492-2e85ffc8930f" name="Tourist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2f4ff800-3b23-4aea-825a-4512c47a6089" />
+        <targetEnds>
+          <association Id="ccd2d329-f506-45bb-9b50-24b676b3812c" isDerived="false" sourceEndRoleName="Tourist" targetEndRoleName="New Users Finds Restaurant" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e32ac1e5-2d9b-4c61-80c2-057ad4044ac4" LastKnownName="New Users Finds Restaurant" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="33290bb0-89bc-4597-8286-2dc41f6c15b9" name="Tourist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a1a4ae27-aedb-460d-963f-ba7717b44774" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3f168832-3309-4588-af55-30a3e7bab83b" name="New Users Finds Restaurant" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4ad10a73-9acb-4f2d-b32f-04f14e9e7153" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c91333d2-902f-44d0-b355-5cb0af6c234c" />
+          </association>
+          <association Id="81e067e3-caff-473a-9419-416c6f1076e7" isDerived="false" sourceEndRoleName="Tourist" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a7625b1b-9790-46e3-be6f-6a781a88216e" LastKnownName="Existing User Finds Nightclub" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="067a40e0-e13a-4eec-9750-9f126ee9ca5a" name="Tourist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9007f871-06d5-4d9d-a2bf-9f51bc004959" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="90fb048a-8082-4541-a950-97e0e6c06223" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4a7c97cd-551a-476c-8c09-c3cf94214731" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bab5c208-a7f0-467c-bbda-e205030d218f" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e32ac1e5-2d9b-4c61-80c2-057ad4044ac4" name="New Users Finds Restaurant" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6adbefd6-6a66-45b8-8dbc-d585e677b23d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a7625b1b-9790-46e3-be6f-6a781a88216e" name="Existing User Finds Nightclub" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5fb78618-42e4-4a5e-b517-bd3f08393bd3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3b3202b6-805e-47ce-a9de-bbe859cab915" name="ModelingProject1">
+    <elementDefinition Id="8523ee3c-fb22-4ac6-8cca-4f3cb66f6cf8" />
+  </package>
+</useCaseModelRoot>
