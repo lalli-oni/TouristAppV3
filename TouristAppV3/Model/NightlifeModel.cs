@@ -5,7 +5,8 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
- 
+using TouristAppV3.Annotations;
+
 
 namespace TouristAppV3.Model
 {
@@ -51,7 +52,7 @@ namespace TouristAppV3.Model
             return Name.ToString();
         }
 
-        #region INotifyPropertyChanged
+        #region INotify
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -60,6 +61,6 @@ namespace TouristAppV3.Model
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
-        #endregion
+#endregion
     }
 }
