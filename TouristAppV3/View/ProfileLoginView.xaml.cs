@@ -21,7 +21,7 @@ namespace TouristAppV3.View
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class MainPageView : Page
+    public sealed partial class ProfileLoginView : Page
     {
 
         private NavigationHelper navigationHelper;
@@ -45,7 +45,7 @@ namespace TouristAppV3.View
         }
 
 
-        public MainPageView()
+        public ProfileLoginView()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
