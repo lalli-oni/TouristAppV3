@@ -12,7 +12,7 @@
 
     <Page.Resources>
         <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
-        <x:String x:Key="AppName">My Application</x:String>
+        <x:String x:Key="AppName">Your Roskilde Experience</x:String>
     </Page.Resources>
 
     <!--
@@ -46,5 +46,10 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
                         IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
         </Grid>
+        <TextBox x:Name="emailLoginTextBox" HorizontalAlignment="Left" Margin="526,217,0,0" Grid.Row="1" TextWrapping="Wrap" Text="E-mail address" VerticalAlignment="Top" Width="350" Background="#FF898888" FontSize="20" FontWeight="Bold"/>
+        <TextBox x:Name="passwordLoginTextBox" HorizontalAlignment="Left" Margin="526,293,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="350" Background="#FF898888" FontSize="20" FontWeight="Bold"/>
+        <TextBlock x:Name="loginProfileTitleTextBlock" HorizontalAlignment="Center" Margin="556,125,531,0" Grid.Row="1" TextWrapping="Wrap" Text="Log in to Profile" VerticalAlignment="Top" FontSize="40"/>
+        <Button x:Name="loginProfileButton" Content="Log In" HorizontalAlignment="Left" Margin="553,388,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="loginProfileBackButton" Content="Back" HorizontalAlignment="Left" Margin="759,388,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Page>

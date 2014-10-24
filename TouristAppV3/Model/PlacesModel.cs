@@ -5,12 +5,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using TouristAppV3.Annotations;
-
 
 namespace TouristAppV3.Model
 {
-    class NightlifeModel : PlacesModel
+    class PlacesModel : INotifyPropertyChanged
     {
 
         #region Variables
@@ -46,11 +46,10 @@ namespace TouristAppV3.Model
         }
         #endregion
 
-        //Does it work to have the method only in Superclass?
-        //public override string ToString()
-        //{
-        //    return Name.ToString();
-        //}
+        public override string ToString()
+        {
+            return Name.ToString();
+        }
 
         #region INotify
         public event PropertyChangedEventHandler PropertyChanged;
@@ -61,6 +60,6 @@ namespace TouristAppV3.Model
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
-#endregion
+        #endregion
     }
 }

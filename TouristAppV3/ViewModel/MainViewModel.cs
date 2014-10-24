@@ -15,18 +15,22 @@ using TouristAppV3.Annotations;
 
 namespace TouristAppV3.ViewModel
 {
-    class MainViewModel : INotifyPropertyChanged
+    internal class MainViewModel : INotifyPropertyChanged
     {
+        #region Class Variables
         private ObservableCollection<NightlifeModel> _nightlifes;
         private NightlifeModel _selectedNightlifeModel;
         private NightlifeModel _newNightlifeModel;
         private ICommand _addNewNightlife;
         private ICommand _removeSelectedNightlife;
         private ICommand _editNightlife;
+        #endregion
 
+        #region Constructor Method
         public MainViewModel()
         {
             #region Create Nightlife Models(COMMENTED OUT)
+
             //_nightlifes = new ObservableCollection<NightlifeModel>();
 
             //NightlifeModel n1 = new NightlifeModel();
@@ -90,6 +94,7 @@ namespace TouristAppV3.ViewModel
             //n6.Address = "Hersegade 11";
             //n6.Description = "Probably a nice place. Probably";
             //n6.Url = "http://www.gustav-wieds-vinstue.dk/";
+
             #endregion
 
             LoadNightlifeModels();
@@ -97,13 +102,14 @@ namespace TouristAppV3.ViewModel
             _newNightlifeModel = new NightlifeModel();
             _addNewNightlife = new RelayCommand(AddNightlife);
             _removeSelectedNightlife = new RelayCommand(RemoveNightlife);
-
         }
+        #endregion
 
         #region LoadNightlifeModels()
+
         private async void LoadNightlifeModels()
         {
-            
+
             StorageFile fileNightlife = null;
 
             //try to load elephants xml from local storage
@@ -113,7 +119,7 @@ namespace TouristAppV3.ViewModel
             }
             catch (Exception)
             {
-                
+
             }
 
             //if it fails use assets folder
@@ -141,10 +147,11 @@ namespace TouristAppV3.ViewModel
 
             OnPropertyChanged("Nightlifes");
         }
+
         #endregion
 
-        
         #region Property Fields
+
         public ObservableCollection<NightlifeModel> Nightlifes
         {
             get { return _nightlifes; }
@@ -186,16 +193,18 @@ namespace TouristAppV3.ViewModel
             set { _newNightlifeModel = value; }
         }
 
-         public NightlifeModel SelectNightlifeModel
+        public NightlifeModel SelectNightlifeModel
         {
-            get{ return _selectedNightlifeModel; }
-            set{ _selectedNightlifeModel = value;
+            get { return _selectedNightlifeModel; }
+            set
+            {
+                _selectedNightlifeModel = value;
                 OnPropertyChanged("SelectedNightlifeModel");
+            }
         }
-#endregion
+        #endregion
 
-
-        #region INotifyPropertyChanged
+        #region INotify
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -205,6 +214,5 @@ namespace TouristAppV3.ViewModel
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
-
     }
 }
