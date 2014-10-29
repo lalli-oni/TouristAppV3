@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
 using Windows.Storage;
+using Windows.UI.Popups;
 using TouristAppV3.Model;
 using TouristAppV3.Annotations;
 
@@ -97,9 +98,10 @@ namespace TouristAppV3.ViewModel
 
             #endregion
 
-            LoadNightlifeModels();
+           
 
             _newNightlifeModel = new NightlifeModel();
+            LoadNightlifeModels();
             _addNewNightlife = new RelayCommand(AddNightlife);
             _removeSelectedNightlife = new RelayCommand(RemoveNightlife);
         }
@@ -112,7 +114,7 @@ namespace TouristAppV3.ViewModel
 
             StorageFile fileNightlife = null;
 
-            //try to load elephants xml from local storage
+            //try to load nightlifes xml from local storage
             try
             {
                 fileNightlife = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
@@ -126,7 +128,7 @@ namespace TouristAppV3.ViewModel
             if (fileNightlife == null)
             {
                 StorageFolder installationFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-                string xmlfileNightlife = @"Assets\xml\Nightlife.xml";
+                string xmlfileNightlife = @"Assets\xml\nightlife.xml";
                 fileNightlife = await installationFolder.GetFileAsync(xmlfileNightlife);
             }
 
