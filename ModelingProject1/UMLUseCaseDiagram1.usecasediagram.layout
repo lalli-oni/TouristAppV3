@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLUseCaseDiagram1">
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.75" name="UMLUseCaseDiagram1">
   <useCaseModelRootMoniker Id="b1e78c10-a2ac-4f24-bb0f-e5a3542ad43c" />
   <nestedChildShapes>
     <actorShape Id="69277ff1-bb1f-4a2c-9578-5c5590ba12bb" absoluteBounds="2, 2.75, 0.5, 0.5" isReference="false" heightOffset="0">
@@ -18,17 +18,6 @@
         <useCaseShapeMoniker Id="85284a59-6c0f-4d17-885a-8494f41ba350" />
       </nodes>
     </useCaseAssociationConnector>
-    <commentShape Id="7570c416-bc92-4645-abe4-ee73c28f1238" absoluteBounds="5.25, 1.125, 4.25, 2.625" customColor="251, 247, 200">
-      <commentMoniker Id="fccc786f-0725-41b8-93ff-ecd42317e6f1" />
-      <relativeChildShapes />
-    </commentShape>
-    <commentConnector edgePoints="[(5.25 : 1.8125); (5 : 1.8125)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
-      <relativeChildShapes />
-      <nodes>
-        <commentShapeMoniker Id="7570c416-bc92-4645-abe4-ee73c28f1238" />
-        <useCaseShapeMoniker Id="85284a59-6c0f-4d17-885a-8494f41ba350" />
-      </nodes>
-    </commentConnector>
     <useCaseShape Id="72878e61-89b3-4888-ae7b-3e55f31926eb" absoluteBounds="2.75, 4.25, 2.125, 1" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="a7625b1b-9790-46e3-be6f-6a781a88216e" LastKnownName="Existing User Finds Nightclub" />
       <relativeChildShapes />
@@ -41,16 +30,20 @@
         <useCaseShapeMoniker Id="72878e61-89b3-4888-ae7b-3e55f31926eb" />
       </nodes>
     </useCaseAssociationConnector>
-    <commentShape Id="a882056d-fabe-4e06-8b95-eac1b237d374" absoluteBounds="5.25, 4, 4.25, 2.125" customColor="251, 247, 200">
+    <commentShape Id="a882056d-fabe-4e06-8b95-eac1b237d374" absoluteBounds="1.875, 6, 4.25, 2.125" customColor="251, 247, 200">
       <commentMoniker Id="735b5abb-dcc6-4ccf-8790-0cbc813aea80" />
       <relativeChildShapes />
     </commentShape>
-    <commentConnector edgePoints="[(5.25 : 4.75); (4.875 : 4.75)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+    <commentConnector edgePoints="[(3.8125 : 6); (3.8125 : 5.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
       <relativeChildShapes />
       <nodes>
         <commentShapeMoniker Id="a882056d-fabe-4e06-8b95-eac1b237d374" />
         <useCaseShapeMoniker Id="72878e61-89b3-4888-ae7b-3e55f31926eb" />
       </nodes>
     </commentConnector>
+    <commentShape Id="f24258ce-3b8a-456f-a3e1-425058909a6f" absoluteBounds="5.75, 1.125, 2.75, 7.375" customColor="251, 247, 200">
+      <commentMoniker Id="4b15a70a-4921-46e5-904b-946ed02f8f80" />
+      <relativeChildShapes />
+    </commentShape>
   </nestedChildShapes>
 </useCaseDiagram>

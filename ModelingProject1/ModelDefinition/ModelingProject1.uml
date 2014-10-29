@@ -5,33 +5,6 @@
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <ownedCommentsInternal>
     <comment
-      Id="e6c7c259-26a6-45d4-9fd5-37e59e996b8a">
-      <body>Start Program
-Show Log-In Page
-User pushes Create Account Button
-GoTo Sign-Up Page which queries for user name and password
--XXX User enters unregisteres user information
--XXXXXX Popup box tells user he entered wrong information
--XXXXXXXXXX User closes Popup box
-User enters user name and password and presses Log In
-System takes information and adds it as account
-GoTo Log-In Page
-User enters correct Log-In information
-GoTo MainPageView
-User selects Restaurant Group
-GoTo GroupPageView(Restaurants)
-User selects McDonalds(Restaurant)
-GoTo ItemPageView(McDonalds)
-User reads the data retrieved
-User closes Application</body>
-      <annotatedElements>
-        <useCaseMoniker
-          Id="6adbefd6-6a66-45b8-8dbc-d585e677b23d"
-          LastKnownName="New Users Finds Restaurant"
-          LastKnownLocation="ModelingProject1.uml" />
-      </annotatedElements>
-    </comment>
-    <comment
       Id="191492e0-d0bf-4414-83a2-ac8b90c54c41">
       <body>Start Program
 Show Log-In Page
@@ -54,6 +27,40 @@ User closes Application</body>
           LastKnownName="Existing User Finds Nightclub"
           LastKnownLocation="ModelingProject1.uml" />
       </annotatedElements>
+    </comment>
+    <comment
+      Id="4aecc3d0-fd70-4c0a-960f-0900a151bd6c">
+      <body>Start Program
+Show MainPage
+
+User pushes Create Account Button
+
+GoTo Sign-Up Page which queries for a new user name and password
+
+XXX User enters registered user information
+XXXXXX Popup box tells user he entered already existing information
+XXXXXXXXXX User closes Popup box
+
+User enters new user name and password and presses Create Account
+System takes information and adds it as account
+
+System logs in to the created account
+
+
+
+GoTo MainPageView
+
+User selects Restaurant Group
+
+GoTo GroupPageView(Restaurants)
+
+User selects McDonalds(Restaurant)
+
+GoTo ItemPageView(McDonalds)
+
+User reads the data retrieved
+
+User closes Application</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -197,6 +204,21 @@ User closes Application</body>
         Id="dac20ead-c196-471d-83d4-37412c1d0cae"
         LastKnownName="Model"
         LastKnownLocation="Package_1418.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="139ff04e-f4b1-4379-8ead-1683d5cbdc5d"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="95867631-bdf0-4f4c-a840-04d325ade102"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -1,4 +1,6 @@
-﻿using TouristAppV3.Common;
+﻿using Windows.UI.Core;
+using Windows.UI.Popups;
+using TouristAppV3.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -103,5 +105,39 @@ namespace TouristAppV3.View
         }
 
         #endregion
+
+        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog1 = new CoreWindowDialog("Dialog1");
+            dialog1.Commands.Add(new UICommand("Cancel", OnCommand, 0));
+            await dialog1.ShowAsync();
+        }
+
+        private async void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        {
+            var dialog2 = new CoreWindowDialog("Dialog2");
+            await dialog2.ShowAsync();
+        }
+
+        private async void AppBarButton_Click_2(object sender, RoutedEventArgs e)
+        {
+            var dialog3 = new CoreWindowDialog("Dialog3");
+            await dialog3.ShowAsync();
+        }
+
+        private void profileManageButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ProfileLoginView));
+        }
+
+        private void profileCreateButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ProfileCreateView));
+        }
+
+        void OnCommand(IUICommand command)
+        {
+            
+        }
     }
 }
