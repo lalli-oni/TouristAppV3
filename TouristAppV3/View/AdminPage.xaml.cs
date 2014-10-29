@@ -1,7 +1,4 @@
-﻿using System.ServiceModel.Channels;
-using Windows.UI.Core;
-using Windows.UI.Popups;
-using TouristAppV3.Common;
+﻿using TouristAppV3.Common;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -16,7 +13,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using TouristAppV3.ViewModel;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
@@ -25,7 +21,7 @@ namespace TouristAppV3.View
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class AdminPage : Page
     {
 
         private NavigationHelper navigationHelper;
@@ -49,7 +45,7 @@ namespace TouristAppV3.View
         }
 
 
-        public MainPage()
+        public AdminPage()
         {
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
@@ -106,43 +102,5 @@ namespace TouristAppV3.View
         }
 
         #endregion
-
-        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
-        {
-            //var dialog1 = new CoreWindowDialog("Dialog1");
-            //dialog1.Commands.Add(new UICommand("Cancel", OnCommand, 0));
-            //await dialog1.ShowAsync();
-            var messageBox1 = new MessageDialog("Add Object Title", "Add Object");
-            messageBox1.Commands.Add(new UICommand("Add"));
-        }
-
-        private async void AppBarButton_Click_1(object sender, RoutedEventArgs e)
-        {
-            var dialog2 = new CoreWindowDialog("Dialog2");
-            dialog2.Commands.Add(new UICommand("Cancel", OnCommand, 0));
-            await dialog2.ShowAsync();
-        }
-
-        private async void AppBarButton_Click_2(object sender, RoutedEventArgs e)
-        {
-            var dialog3 = new CoreWindowDialog("Dialog3");
-            dialog3.Commands.Add(new UICommand("Cancel", OnCommand, 0));
-            await dialog3.ShowAsync();
-        }
-
-        private void profileManageButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ProfileLoginView));
-        }
-
-        private void profileCreateButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ProfileCreateView));
-        }
-
-        void OnCommand(IUICommand command)
-        {
-            
-        }
     }
 }

@@ -54,7 +54,7 @@
             <Button x:Name="profileManageButton" Content="Profile View/Log-in" Grid.Column="2" HorizontalAlignment="Left" Margin="286,65,0,0" VerticalAlignment="Top" Click="profileManageButton_Click"/>
             <Button x:Name="profileCreateButton" Content="Profile Create" Grid.Column="2" HorizontalAlignment="Left" Margin="486,65,0,0" VerticalAlignment="Top" Click="profileCreateButton_Click"/>
         </Grid>
-        <ListView x:Name="groupListView" HorizontalAlignment="Left" Height="496" Margin="47,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253" ItemsSource="{Binding Nightlifes}" SelectedItem="{Binding SelectNightlifeModel}"/>
+        <ListView x:Name="groupListView" HorizontalAlignment="Left" Height="496" Margin="47,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253" ItemsSource="{Binding Nightlifes}" SelectedItem="{Binding SelectNightlifeModel.Name}"/>
         <TextBlock x:Name="nameTextBlock" HorizontalAlignment="Left" Margin="644,93,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" DataContext="{Binding SelectNightlifeModel.Name}"/>
         <TextBlock x:Name="addressTextBlock" HorizontalAlignment="Left" Margin="644,111,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" DataContext="{Binding SelectNightlifeModel.Address}"/>
         <TextBlock x:Name="urlTextBlock" HorizontalAlignment="Left" Margin="644,129,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" DataContext="{Binding SelectNightlifeModel.Url}"/>

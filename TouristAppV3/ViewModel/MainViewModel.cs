@@ -4,7 +4,9 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -98,8 +100,8 @@ namespace TouristAppV3.ViewModel
 
             #endregion
 
-           
 
+            _nightlifes = new ObservableCollection<NightlifeModel>();
             _newNightlifeModel = new NightlifeModel();
             LoadNightlifeModels();
             _addNewNightlife = new RelayCommand(AddNightlife);
@@ -137,7 +139,7 @@ namespace TouristAppV3.ViewModel
 
             IEnumerable<XElement> nightlifeList = nightlifeDocument.Descendants("nightlifemodel");
 
-
+            
             foreach (XElement xElement in nightlifeList)
             {
                 NightlifeModel e = new NightlifeModel();
@@ -145,6 +147,7 @@ namespace TouristAppV3.ViewModel
                 e.Address = xElement.Element("address").Value;
                 e.Description = xElement.Element("description").Value;
                 e.Url = xElement.Element("url").Value;
+                _nightlifes.Add(e);
             }
 
             OnPropertyChanged("Nightlifes");
