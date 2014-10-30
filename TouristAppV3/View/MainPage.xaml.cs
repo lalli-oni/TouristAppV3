@@ -130,19 +130,19 @@ namespace TouristAppV3.View
             await dialog3.ShowAsync();
         }
 
-        private void profileManageButton_Click(object sender, RoutedEventArgs e)
+        void OnCommand(IUICommand command)
         {
-            this.Frame.Navigate(typeof(ProfileLoginView));
+            
         }
 
-        private void profileCreateButton_Click(object sender, RoutedEventArgs e)
+        private void profileLoginButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ProfileCreateView));
         }
 
-        void OnCommand(IUICommand command)
+        private void profileCreateButton_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            this.Frame.Navigate(typeof(ProfileCreateView));
         }
     }
 }

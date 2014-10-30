@@ -105,6 +105,7 @@ namespace TouristAppV3.ViewModel
             _nightlifes = new ObservableCollection<NightlifeModel>();
             _newNightlifeModel = new NightlifeModel();
             LoadNightlifeModels();
+            
             _addNewNightlife = new RelayCommand(AddNightlife);
             _removeSelectedNightlife = new RelayCommand(RemoveNightlife);
         }
