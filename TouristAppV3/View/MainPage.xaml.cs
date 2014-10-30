@@ -51,6 +51,7 @@ namespace TouristAppV3.View
 
         public MainPage()
         {
+
             this.InitializeComponent();
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += navigationHelper_LoadState;
@@ -107,7 +108,7 @@ namespace TouristAppV3.View
 
         #endregion
 
-        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
+        private async void addCommandButton_Click(object sender, RoutedEventArgs e)
         {
             //var dialog1 = new CoreWindowDialog("Dialog1");
             //dialog1.Commands.Add(new UICommand("Cancel", OnCommand, 0));
@@ -116,14 +117,14 @@ namespace TouristAppV3.View
             messageBox1.Commands.Add(new UICommand("Add"));
         }
 
-        private async void AppBarButton_Click_1(object sender, RoutedEventArgs e)
+        private async void editCommandButton_Click(object sender, RoutedEventArgs e)
         {
             var dialog2 = new CoreWindowDialog("Dialog2");
             dialog2.Commands.Add(new UICommand("Cancel", OnCommand, 0));
             await dialog2.ShowAsync();
         }
 
-        private async void AppBarButton_Click_2(object sender, RoutedEventArgs e)
+        private async void removeCommandButton_Click(object sender, RoutedEventArgs e)
         {
             var dialog3 = new CoreWindowDialog("Dialog3");
             dialog3.Commands.Add(new UICommand("Cancel", OnCommand, 0));
@@ -135,12 +136,12 @@ namespace TouristAppV3.View
             
         }
 
-        private void profileLoginButton_Click(object sender, RoutedEventArgs e)
+        private async void profileLoginButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ProfileCreateView));
         }
 
-        private void profileCreateButton_Click_1(object sender, RoutedEventArgs e)
+        private async void profileCreateButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(ProfileCreateView));
         }
