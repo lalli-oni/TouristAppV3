@@ -52,7 +52,7 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,23,40"/>
         </Grid>
-        <ListView x:Name="groupListView" HorizontalAlignment="Left" Height="496" Margin="47,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253" ItemsSource="{Binding Nightlifes}" SelectedItem="{Binding SelectedNightlifeModel}" SelectedIndex="1"/>
+        <ListView x:Name="groupListView" HorizontalAlignment="Left" Height="496" Margin="47,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253" ItemsSource="{Binding Nightlifes}" SelectedItem="{Binding SelectedNightlifeModel}"/>
         <TextBlock x:Name="nameTextBlock" HorizontalAlignment="Left" Margin="644,93,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" DataContext="{Binding SelectedNightlifeModel.Name}"/>
         <TextBlock x:Name="addressTextBlock" HorizontalAlignment="Left" Margin="644,111,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" DataContext="{Binding SelectedNightlifeModel.Address}"/>
         <TextBlock x:Name="urlTextBlock" HorizontalAlignment="Left" Margin="644,129,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" DataContext="{Binding SelectedNightlifeModel.Url}"/>
@@ -61,11 +61,11 @@
     <Page.BottomAppBar>
         <CommandBar>
             <AppBarButton x:Name="profileLoginButton" Icon="Contact" Label="Log In" Click="profileLoginButton_Click"/>
-            <AppBarButton x:Name="profileCreateButton" Icon="AddFriend" Label="Create User" Click="profileCreateButton_Click_1"/>
+            <AppBarButton x:Name="profileCreateButton" Icon="AddFriend" Label="Create User" Click="profileCreateButton_Click"/>
             <AppBarSeparator/>
-            <AppBarButton x:Name="addCommandButton" Icon="Add" Label="Add Item" Click="AppBarButton_Click"/>
-            <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit" Click="AppBarButton_Click_1"/>
-            <AppBarButton x:Name="removeCommandButton" Icon="Remove" Label="Remove" Click="AppBarButton_Click_2"/>
+            <AppBarButton x:Name="addCommandButton" Icon="Add" Label="Add Item" Click="addCommandButton_Click"/>
+            <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit" Click="editCommandButton_Click"/>
+            <AppBarButton x:Name="removeCommandButton" Icon="Remove" Label="Remove" Click="removeCommandButton_Click"/>
         </CommandBar>
     </Page.BottomAppBar>
 </Page>
