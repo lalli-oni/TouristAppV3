@@ -138,7 +138,7 @@ namespace TouristAppV3.View
 
         private async void profileLoginButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ProfileCreateView));
+            this.Frame.Navigate(typeof(ProfileLoginView));
         }
 
         private async void profileCreateButton_Click(object sender, RoutedEventArgs e)
