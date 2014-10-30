@@ -47,6 +47,7 @@ namespace TouristAppV3.ViewModel
             //                     "Sizeable beer selection, free wi-fi and fantastic " +
             //                     "music. Gimle sure has a lot to offer.";
             //n1.Url = "http://gimle.dk/";
+            //_nightlifes.Add(n1);
 
             //NightlifeModel n2 = new NightlifeModel();
             //n2.Name = "Roskilde Festival";
@@ -149,8 +150,9 @@ namespace TouristAppV3.ViewModel
                 e.Url = xElement.Element("url").Value;
                 _nightlifes.Add(e);
             }
-
+            _selectedNightlifeModel = _nightlifes[0];
             OnPropertyChanged("Nightlifes");
+            
         }
 
         #endregion
@@ -198,7 +200,7 @@ namespace TouristAppV3.ViewModel
             set { _newNightlifeModel = value; }
         }
 
-        public NightlifeModel SelectNightlifeModel
+        public NightlifeModel SelectedNightlifeModel
         {
             get { return _selectedNightlifeModel; }
             set
@@ -219,5 +221,10 @@ namespace TouristAppV3.ViewModel
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }
