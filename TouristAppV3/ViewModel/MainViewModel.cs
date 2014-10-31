@@ -156,11 +156,6 @@ namespace TouristAppV3.ViewModel
         }
         #endregion
 
-        private async void AddNightLifeModelXML()
-        {
-            
-        }
-
         #region Property Fields
 
         public ObservableCollection<NightlifeModel> Nightlifes

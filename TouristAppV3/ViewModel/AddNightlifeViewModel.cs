@@ -24,6 +24,7 @@ namespace TouristAppV3.ViewModel
         {
             _newNightlife = new NightlifeModel();
             _addNewNightlife = new RelayCommand(AddNightlifeCommand);
+            AddNightlifeCommand();
         }
 
         private async void AddNightlifeCommand()
@@ -48,9 +49,9 @@ namespace TouristAppV3.ViewModel
             XDocument nightlifeDocument = XDocument.Load(loadStream);
             loadStream.Dispose();
 
-            XElement nightlifelist = nightlifeDocument.Element("nightlifemodel");
+            XElement nightlifelist = nightlifeDocument.Element("nightlifemodels");
 
-            XElement nightlife = new XElement("elephantmodel");
+            XElement nightlife = new XElement("nightlifemodel");
             nightlife.Add(new XElement("name", NewNightlife.Name));
             nightlife.Add(new XElement("address", NewNightlife.Address));
             nightlife.Add(new XElement("description", NewNightlife.Description));
@@ -75,6 +76,7 @@ namespace TouristAppV3.ViewModel
 
             Stream saveStream = await saveFile.OpenStreamForWriteAsync();
             nightlifeDocument.Save(saveStream);
+            await saveStream.FlushAsync();
             saveStream.Dispose();
         }
 

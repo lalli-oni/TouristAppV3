@@ -69,28 +69,28 @@
             <AppBarButton x:Name="addCommandButton" Icon="Add" Label="Add Item" Click="addCommandButton_Click">
                 <Button.Flyout>
                     <Flyout>
-                    <StackPanel Width="406">
-                        <TextBlock Text="Insert the 'Name' for the Restaurant:" FontSize="16"
+                        <StackPanel Width="406">
+                            <TextBlock Text="Insert the 'Name' for the Restaurant:" FontSize="16"
                            FontWeight="SemiLight" FontFamily="Segoe UI"
                            Margin="0,0,0,10"  />
-                        <TextBox x:Name="nameAddXMLTextbox" Text="{Binding NewNightlife.Name, Mode=TwoWay}"/>
-                        <TextBlock Text="Insert the 'Address' for the Restaurant:" FontSize="16"
+                            <TextBox x:Name="nameAddXMLTextbox" Text="{Binding NewNightlife.Name, Mode=TwoWay}"/>
+                            <TextBlock Text="Insert the 'Address' for the Restaurant:" FontSize="16"
                            FontWeight="SemiLight" FontFamily="Segoe UI"
                            Margin="0,0,0,10"  />
                             <TextBox x:Name="addressAddXMLTextbox" Text="{Binding NewNightlife.Address, Mode=TwoWay}" />
-                        <TextBlock Text="Insert the 'Url' for the Restaurant:" FontSize="16"
+                            <TextBlock Text="Insert the 'Url' for the Restaurant:" FontSize="16"
                            FontWeight="SemiLight" FontFamily="Segoe UI"
                            Margin="0,0,0,10"  />
                             <TextBox x:Name="urlAddXMLTextbox" Text="{Binding NewNightlife.Url, Mode=TwoWay}" />
-                        <TextBlock Text="Insert the 'Description' for the Restaurant:" FontSize="16"
+                            <TextBlock Text="Insert the 'Description' for the Restaurant:" FontSize="16"
                            FontWeight="SemiLight" FontFamily="Segoe UI"
                            Margin="0,0,0,10"  />
                             <TextBox x:Name="descriptionAddXMLTextbox" Text="{Binding NewNightlife.Description, Mode=TwoWay}" />
-                        <Button x:Name="addXMLButton" Content="Send" HorizontalAlignment="Right"
+                            <Button x:Name="addXMLButton" Content="Send" HorizontalAlignment="Right"
                         FontSize="16" Margin="0,10,0,0"  Command="{Binding AddNewNightlife, Mode=TwoWay}"/>
-                    </StackPanel>
-                </Flyout>
-            </Button.Flyout>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
             </AppBarButton>
             <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit" Click="editCommandButton_Click"/>
             <AppBarButton x:Name="removeCommandButton" Icon="Remove" Label="Remove" Click="removeCommandButton_Click"/>
