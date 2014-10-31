@@ -116,6 +116,7 @@
     <Compile Include="Model\PlacesModel.cs" />
     <Compile Include="Model\ProfileModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="ViewModel\AddNightlifeViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\ProfileViewModel.cs" />
@@ -150,6 +151,7 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\xml\allNightlife.xml" />
     <Content Include="Assets\xml\nightlife.xml" />
     <Content Include="Assets\xml\Profiles.xml" />
   </ItemGroup>

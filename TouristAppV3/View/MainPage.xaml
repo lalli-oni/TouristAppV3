@@ -52,18 +52,46 @@
             <TextBlock x:Name="pageTitle" Text="{StaticResource AppName}" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
 				IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,23,40"/>
         </Grid>
-        <ListView x:Name="groupListView" HorizontalAlignment="Left" Height="496" Margin="47,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253" ItemsSource="{Binding Nightlifes}" SelectedItem="{Binding SelectedNightlifeModel, Mode=TwoWay}"/>
+        <ListView x:Name="groupListView" HorizontalAlignment="Left" Height="441" Margin="47,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="253" ItemsSource="{Binding Nightlifes}" SelectedItem="{Binding SelectedNightlifeModel, Mode=TwoWay}"/>
         <TextBlock x:Name="nameTextBlock" HorizontalAlignment="Left" Margin="644,93,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedNightlifeModel.Name}" VerticalAlignment="Top"/>
         <TextBlock x:Name="addressTextBlock" HorizontalAlignment="Left" Margin="644,111,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedNightlifeModel.Address}" VerticalAlignment="Top"/>
         <TextBlock x:Name="urlTextBlock" HorizontalAlignment="Left" Margin="644,129,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedNightlifeModel.Url}" VerticalAlignment="Top"/>
         <TextBlock x:Name="descriptionTextBlock" HorizontalAlignment="Left" Margin="644,147,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedNightlifeModel.Description}" VerticalAlignment="Top"/>
     </Grid>
     <Page.BottomAppBar>
-        <CommandBar>
+        <CommandBar IsOpen="True">
+            <CommandBar.DataContext>
+                <viewModel:AddNightlifeViewModel/>
+            </CommandBar.DataContext>
             <AppBarButton x:Name="profileLoginButton" Icon="Contact" Label="Log In" Click="profileLoginButton_Click"/>
             <AppBarButton x:Name="profileCreateButton" Icon="AddFriend" Label="Create User" Click="profileCreateButton_Click"/>
             <AppBarSeparator/>
-            <AppBarButton x:Name="addCommandButton" Icon="Add" Label="Add Item" Click="addCommandButton_Click"/>
+            <AppBarButton x:Name="addCommandButton" Icon="Add" Label="Add Item" Click="addCommandButton_Click">
+                <Button.Flyout>
+                    <Flyout>
+                    <StackPanel Width="406">
+                        <TextBlock Text="Insert the 'Name' for the Restaurant:" FontSize="16"
+                           FontWeight="SemiLight" FontFamily="Segoe UI"
+                           Margin="0,0,0,10"  />
+                        <TextBox x:Name="nameAddXMLTextbox" Text="{Binding NewNightlife.Name, Mode=TwoWay}"/>
+                        <TextBlock Text="Insert the 'Address' for the Restaurant:" FontSize="16"
+                           FontWeight="SemiLight" FontFamily="Segoe UI"
+                           Margin="0,0,0,10"  />
+                            <TextBox x:Name="addressAddXMLTextbox" Text="{Binding NewNightlife.Address, Mode=TwoWay}" />
+                        <TextBlock Text="Insert the 'Url' for the Restaurant:" FontSize="16"
+                           FontWeight="SemiLight" FontFamily="Segoe UI"
+                           Margin="0,0,0,10"  />
+                            <TextBox x:Name="urlAddXMLTextbox" Text="{Binding NewNightlife.Url, Mode=TwoWay}" />
+                        <TextBlock Text="Insert the 'Description' for the Restaurant:" FontSize="16"
+                           FontWeight="SemiLight" FontFamily="Segoe UI"
+                           Margin="0,0,0,10"  />
+                            <TextBox x:Name="descriptionAddXMLTextbox" Text="{Binding NewNightlife.Description, Mode=TwoWay}" />
+                        <Button x:Name="addXMLButton" Content="Send" HorizontalAlignment="Right"
+                        FontSize="16" Margin="0,10,0,0"  Command="{Binding AddNewNightlife, Mode=TwoWay}"/>
+                    </StackPanel>
+                </Flyout>
+            </Button.Flyout>
+            </AppBarButton>
             <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit" Click="editCommandButton_Click"/>
             <AppBarButton x:Name="removeCommandButton" Icon="Remove" Label="Remove" Click="removeCommandButton_Click"/>
         </CommandBar>

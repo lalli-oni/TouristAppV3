@@ -27,6 +27,7 @@ namespace TouristAppV3.ViewModel
         private ICommand _addNewNightlife;
         private ICommand _removeSelectedNightlife;
         private ICommand _editNightlife;
+
         #endregion
 
         #region Constructor Method
@@ -111,8 +112,7 @@ namespace TouristAppV3.ViewModel
         }
         #endregion
 
-        #region LoadNightlifeModels()
-
+        #region LoadNightlifeModelsXML()
         private async void LoadNightlifeModels()
         {
 
@@ -153,10 +153,13 @@ namespace TouristAppV3.ViewModel
             }
             _selectedNightlifeModel = _nightlifes[0];
             OnPropertyChanged("Nightlifes");
+        }
+        #endregion
+
+        private async void AddNightLifeModelXML()
+        {
             
         }
-
-        #endregion
 
         #region Property Fields
 
@@ -222,10 +225,5 @@ namespace TouristAppV3.ViewModel
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
         #endregion
-
-        public override string ToString()
-        {
-            return base.ToString();
-        }
     }
 }

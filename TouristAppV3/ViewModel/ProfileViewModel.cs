@@ -31,7 +31,7 @@ namespace TouristAppV3.ViewModel
         {
             _profiles = new ObservableCollection<ProfileModel>();
             _newProfileModel = new ProfileModel();
-            //LoadProfileModels();
+            LoadProfileModels();
             
             _addNewProfile = new RelayCommand(AddProfile);
             _removeSelectedProfile = new RelayCommand(RemoveProfile);
@@ -84,7 +84,6 @@ namespace TouristAppV3.ViewModel
         #endregion
 
         #region Property Fields
-
         public ObservableCollection<ProfileModel> Profiles
         {
             get { return _profiles; }
@@ -136,7 +135,6 @@ namespace TouristAppV3.ViewModel
             }
         }
         #endregion
-
 
         #region INotify
         public event PropertyChangedEventHandler PropertyChanged;

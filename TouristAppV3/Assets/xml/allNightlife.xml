@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<nightlifemodels>
+	<nightlifemodel>
+    <name>Gimle</name>
+    <address>Helligkorsvej 2</address>
+    <description>Gimle is a student and youth café. With young energetic volunteer servers the mood is like none other. Gimle also hosts concerts with some of the freshest artists in denmark and from across the borders.\n \n Sizeable beer selection, free wi-fi and fantastic music. Gimle sure has a lot to offer.</description>
+    <url>http://gimle.dk/</url>
+  </nightlifemodel>
+  <nightlifemodel>
+    <name>Roskilde Festival</name>
+    <address>Darupvej 19</address>
+    <description>Roskilde Festival 2013 had more than 180 performing bands and gathered around 130,000 festivalgoers, with more than 21,000 volunteers, 5,000 media people and 3,000 artists – which means almost 160,000 people participated in the festival.\n\n In 1972, the festival was taken over by the Roskilde Foundation, which has since run the festival as a non-profit organization for development and support of music, culture and humanism.</description>
+    <url>http://roskilde-festival.dk/</url>
+  </nightlifemodel>
+</nightlifemodels>
