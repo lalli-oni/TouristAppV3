@@ -208,6 +208,7 @@ namespace TouristAppV3.ViewModel
                 OnPropertyChanged("SelectedNightlifeModel");
             }
         }
+
         #endregion
 
         #region INotify

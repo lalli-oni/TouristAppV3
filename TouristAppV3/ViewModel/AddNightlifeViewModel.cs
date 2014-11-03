@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,7 +26,6 @@ namespace TouristAppV3.ViewModel
         {
             _newNightlife = new NightlifeModel();
             _addNewNightlife = new RelayCommand(AddNightlifeCommand);
-            AddNightlifeCommand();
         }
 
         private async void AddNightlifeCommand()

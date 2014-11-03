@@ -59,14 +59,14 @@
         <TextBlock x:Name="descriptionTextBlock" HorizontalAlignment="Left" Margin="644,147,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedNightlifeModel.Description}" VerticalAlignment="Top"/>
     </Grid>
     <Page.BottomAppBar>
-        <CommandBar IsOpen="True">
-            <CommandBar.DataContext>
-                <viewModel:AddNightlifeViewModel/>
-            </CommandBar.DataContext>
+        <CommandBar IsOpen="False">
             <AppBarButton x:Name="profileLoginButton" Icon="Contact" Label="Log In" Click="profileLoginButton_Click"/>
             <AppBarButton x:Name="profileCreateButton" Icon="AddFriend" Label="Create User" Click="profileCreateButton_Click"/>
             <AppBarSeparator/>
             <AppBarButton x:Name="addCommandButton" Icon="Add" Label="Add Item" Click="addCommandButton_Click">
+                <AppBarButton.DataContext>
+                    <viewModel:AddNightlifeViewModel/>
+                </AppBarButton.DataContext>
                 <Button.Flyout>
                     <Flyout>
                         <StackPanel Width="406">
@@ -87,7 +87,7 @@
                            Margin="0,0,0,10"  />
                             <TextBox x:Name="descriptionAddXMLTextbox" Text="{Binding NewNightlife.Description, Mode=TwoWay}" />
                             <Button x:Name="addXMLButton" Content="Send" HorizontalAlignment="Right"
-                        FontSize="16" Margin="0,10,0,0"  Command="{Binding AddNewNightlife, Mode=TwoWay}"/>
+                            FontSize="16" Margin="0,10,0,0"  Command="{Binding AddNewNightlife}"/>
                         </StackPanel>
                     </Flyout>
                 </Button.Flyout>
