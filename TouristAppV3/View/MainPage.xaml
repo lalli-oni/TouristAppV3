@@ -92,7 +92,18 @@
                     </Flyout>
                 </Button.Flyout>
             </AppBarButton>
-            <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit" Click="editCommandButton_Click"/>
+            <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit">
+                <AppBarButton.DataContext>
+                    <viewModel:EditNightlifeViewModel/>
+                </AppBarButton.DataContext>
+                <Button.Flyout>
+                    <Flyout>
+                        <StackPanel Width="406">
+                            <ListView Height="103" Margin="0,0,266,0" ItemsSource="{Binding NightlifeList}" SelectedItem="{Binding SelectedNightlifeModel, Mode=TwoWay}"/>
+                        </StackPanel>
+                    </Flyout>
+                </Button.Flyout>
+            </AppBarButton>
             <AppBarButton x:Name="removeCommandButton" Icon="Remove" Label="Remove" Click="removeCommandButton_Click"/>
         </CommandBar>
     </Page.BottomAppBar>

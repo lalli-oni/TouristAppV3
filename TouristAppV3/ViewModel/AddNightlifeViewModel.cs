@@ -22,11 +22,13 @@ namespace TouristAppV3.ViewModel
         private NightlifeModel _newNightlife;
         private ICommand _addNewNightlife;
 
+        #region Constructor
         public AddNightlifeViewModel()
         {
             _newNightlife = new NightlifeModel();
             _addNewNightlife = new RelayCommand(AddNightlifeCommand);
         }
+        #endregion
 
         private async void AddNightlifeCommand()
         {
