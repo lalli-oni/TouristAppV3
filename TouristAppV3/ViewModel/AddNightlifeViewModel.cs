@@ -24,7 +24,6 @@ namespace TouristAppV3.ViewModel
         {
             _newNightlife = new NightlifeModel();
             _addNewNightlife = new RelayCommand(AddNightlifeCommand);
-            AddNightlifeCommand();
         }
 
         private async void AddNightlifeCommand()
@@ -63,7 +62,7 @@ namespace TouristAppV3.ViewModel
 
             try
             {
-                saveFile = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync("nightlife.xml");
+                saveFile = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
             }
             catch (Exception)
             {

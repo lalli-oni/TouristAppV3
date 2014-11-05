@@ -28,19 +28,13 @@ namespace TouristAppV3.ViewModel
         public EditNightlifeViewModel()
         {
             _nightlifeList = new ObservableCollection<NightlifeModel>();
-            _editSelectedNightlifeModel = new RelayCommand(EditSelectedNightlife);
             LoadEditSelectionList();
+            _editSelectedNightlifeModel = new RelayCommand(EditSelectedNightlife);
         }
         #endregion
 
         private async void EditSelectedNightlife()
         {
-
-            NightlifeModel editedNightlifeModel = new NightlifeModel();
-            editedNightlifeModel.Name = SelectedNightlifeModel.Name;
-            editedNightlifeModel.Address = SelectedNightlifeModel.Address;
-            editedNightlifeModel.Description = SelectedNightlifeModel.Description;
-            editedNightlifeModel.Url = SelectedNightlifeModel.Url;
 
             try
             {
@@ -57,47 +51,68 @@ namespace TouristAppV3.ViewModel
                 file = await installationFolder.GetFileAsync(xmlFile);
             }
 
-            Stream loadStream = await file.OpenStreamForReadAsync();
-            XDocument editnightlifeDocument = XDocument.Load(loadStream);
+            Stream editStream = await file.OpenStreamForWriteAsync();
+            XDocument editnightlifeDocument = XDocument.Load(editStream);
 
-            loadStream.Dispose();
 
-            IEnumerable<XElement> editnightlifelist = editnightlifeDocument.Descendants("nightlifemodel");
+            var targetElement = editnightlifeDocument.Element("nightlifemodels")
+                .Elements("nightlifemodel")
+                .Where(e => e.Element("name").Value == selectedName).Single();
+            targetElement.Element("name").Value = SelectedNightlifeModel.Name;
+            targetElement.Element("address").Value = SelectedNightlifeModel.Address;
+            targetElement.Element("description").Value = SelectedNightlifeModel.Description;
+            targetElement.Element("url").Value = SelectedNightlifeModel.Url;
 
-            XElement addedNightlife = new XElement("nightlifemodel");
-            addedNightlife.Add(new XElement("name", editedNightlifeModel.Name));
-            addedNightlife.Add(new XElement("address", editedNightlifeModel.Address));
-            addedNightlife.Add(new XElement("description", editedNightlifeModel.Description));
-            addedNightlife.Add(new XElement("url", editedNightlifeModel.Url));
+            await editStream.FlushAsync();
+            editnightlifeDocument.Save(editStream);
+            editStream.Dispose();
 
-            foreach (XElement xElement in editnightlifelist)
-            {
-                if (xElement.DescendantsAndSelf().Any(e => e.Value == selectedName))
-                {
-                    xElement.ReplaceWith(addedNightlife);
+                //(new XElement("name",SelectedNightlifeModel.Name),
+                //new XElement("address",SelectedNightlifeModel.Address),
+                //new XElement("description",SelectedNightlifeModel.Description),
+                //new XElement("url",SelectedNightlifeModel.Url));
 
-                    StorageFile saveFile = null;
+            //IEnumerable<XElement> editnightlifelist = editnightlifeDocument.Descendants("nightlifemodel");
 
-                    try
-                    {
-                        saveFile = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync("nightlife.xml");
-                    }
-                    catch (Exception)
-                    {
-                    }
+            //XElement addedNightlife = new XElement("nightlifemodel");
+            //addedNightlife.Add(new XElement("name", SelectedNightlifeModel.Name));
+            //addedNightlife.Add(new XElement("address", SelectedNightlifeModel.Address));
+            //addedNightlife.Add(new XElement("description", SelectedNightlifeModel.Description));
+            //addedNightlife.Add(new XElement("url", SelectedNightlifeModel.Url));
 
-                    if (saveFile == null)
-                    {
-                        saveFile = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
-                    }
+            //foreach (XElement xElement in editnightlifelist)
+            //{
+            //    if (xElement.DescendantsAndSelf().Any(e => e.Value == selectedName))
+            //    {
+            //        xElement.Descendants().Remove();
+            //        xElement.Add(addedNightlife.Descendants());
+            //        break;
 
-                    Stream saveStream = await saveFile.OpenStreamForWriteAsync();
-                    editnightlifeDocument.Save(saveStream);
-                    await saveStream.FlushAsync();
-                    saveStream.Dispose();
-                    break;
-                }
-            }
+            //    }
+            //}
+
+            //StorageFile saveFile = null;
+
+            //try
+            //{
+            //    saveFile = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
+            //}
+            //catch (Exception)
+            //{
+            //}
+
+            //if (saveFile == null)
+            //{
+            //    saveFile = await Windows.Storage.ApplicationData.Current.LocalFolder.CreateFileAsync("nightlife.xml");
+            //}
+
+            //Stream saveStream = await saveFile.OpenStreamForWriteAsync();
+
+            //editnightlifeDocument.Save(saveStream);
+            
+            ////This breakpoint corrupts when removing chars
+            //await saveStream.FlushAsync();
+            //saveStream.Dispose();
         }
 
         private async void LoadEditSelectionList()
@@ -133,12 +148,12 @@ namespace TouristAppV3.ViewModel
                 a.Url = xElement.Element("url").Value;
                 _nightlifeList.Add(a);
             }
-            OnPropertyChanged("NightlifeList");
 
             if (SelectedNightlifeModel == null)
             {
                 SelectedNightlifeModel = NightlifeList[0];
             }
+            OnPropertyChanged("NightlifeList");
 
         }
 
@@ -170,7 +185,6 @@ namespace TouristAppV3.ViewModel
             set
             {
                 _editSelectedNightlifeModel = value;
-                OnPropertyChanged("SelectedNightlifeModel");
             }
         }
 
