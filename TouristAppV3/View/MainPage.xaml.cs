@@ -117,6 +117,13 @@ namespace TouristAppV3.View
             messageBox1.Commands.Add(new UICommand("Add"));
         }
 
+        private async void editCommandButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog2 = new CoreWindowDialog("Dialog2");
+            dialog2.Commands.Add(new UICommand("Cancel", OnCommand, 0));
+            await dialog2.ShowAsync();
+        }
+
         private async void removeCommandButton_Click(object sender, RoutedEventArgs e)
         {
             var dialog3 = new CoreWindowDialog("Dialog3");

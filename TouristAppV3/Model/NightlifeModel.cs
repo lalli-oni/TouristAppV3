@@ -10,7 +10,7 @@ using TouristAppV3.Annotations;
 
 namespace TouristAppV3.Model
 {
-    class NightlifeModel
+    class NightlifeModel : PlacesModel
     {
 
         #region Variables
@@ -46,6 +46,7 @@ namespace TouristAppV3.Model
         }
         #endregion
 
+        //Does it work to have the method only in Superclass?
         public override string ToString()
         {
             return Name.ToString();

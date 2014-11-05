@@ -117,7 +117,6 @@
     <Compile Include="Model\ProfileModel.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModel\AddNightlifeViewModel.cs" />
-    <Compile Include="ViewModel\EditNightlifeViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\ProfileViewModel.cs" />
