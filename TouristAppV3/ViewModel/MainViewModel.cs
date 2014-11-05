@@ -23,7 +23,10 @@ namespace TouristAppV3.ViewModel
         #region Class Variables
         private ObservableCollection<NightlifeModel> _nightlifes;
         private NightlifeModel _selectedNightlifeModel;
-        private ICommand _loadNightlife;
+        private NightlifeModel _newNightlifeModel;
+        private ICommand _addNewNightlife;
+        private ICommand _removeSelectedNightlife;
+        private ICommand _editNightlife;
 
         #endregion
 
@@ -101,12 +104,15 @@ namespace TouristAppV3.ViewModel
 
 
             _nightlifes = new ObservableCollection<NightlifeModel>();
+            _newNightlifeModel = new NightlifeModel();
             LoadNightlifeModels();
-            _loadNightlife = new RelayCommand(LoadNightlifeModels);
+            
+            _addNewNightlife = new RelayCommand(AddNightlife);
+            _removeSelectedNightlife = new RelayCommand(RemoveNightlife);
         }
         #endregion
 
-        #region LoadNightlifeModels()
+        #region LoadNightlifeModelsXML()
         private async void LoadNightlifeModels()
         {
 
@@ -133,8 +139,8 @@ namespace TouristAppV3.ViewModel
             Stream nightlifeStream = await fileNightlife.OpenStreamForReadAsync();
             XDocument nightlifeDocument = XDocument.Load(nightlifeStream);
 
-
             IEnumerable<XElement> nightlifeList = nightlifeDocument.Descendants("nightlifemodel");
+
             
             foreach (XElement xElement in nightlifeList)
             {
@@ -145,6 +151,7 @@ namespace TouristAppV3.ViewModel
                 e.Url = xElement.Element("url").Value;
                 _nightlifes.Add(e);
             }
+            _selectedNightlifeModel = _nightlifes[0];
             OnPropertyChanged("Nightlifes");
         }
         #endregion
@@ -157,10 +164,39 @@ namespace TouristAppV3.ViewModel
             set { _nightlifes = value; }
         }
 
-        public ICommand LoadNightlife
+        private void RemoveNightlife()
         {
-            get { return _loadNightlife; }
-            set { _loadNightlife = value; }
+            _nightlifes.Remove(_selectedNightlifeModel);
+        }
+
+        private void AddNightlife()
+        {
+            _nightlifes.Add(_newNightlifeModel);
+            OnPropertyChanged("Nightlifes");
+        }
+
+        public ICommand EditNightlife
+        {
+            get { return _editNightlife; }
+            set { _editNightlife = value; }
+        }
+
+        public ICommand RemoveSelectedNightlife
+        {
+            get { return _removeSelectedNightlife; }
+            set { _removeSelectedNightlife = value; }
+        }
+
+        public ICommand AddNewNightlife
+        {
+            get { return _addNewNightlife; }
+            set { _addNewNightlife = value; }
+        }
+
+        public NightlifeModel NewNightlifeModel
+        {
+            get { return _newNightlifeModel; }
+            set { _newNightlifeModel = value; }
         }
 
         public NightlifeModel SelectedNightlifeModel
@@ -172,7 +208,6 @@ namespace TouristAppV3.ViewModel
                 OnPropertyChanged("SelectedNightlifeModel");
             }
         }
-
         #endregion
 
         #region INotify

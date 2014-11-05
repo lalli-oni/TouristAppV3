@@ -59,14 +59,14 @@
         <TextBlock x:Name="descriptionTextBlock" HorizontalAlignment="Left" Margin="644,147,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding SelectedNightlifeModel.Description}" VerticalAlignment="Top"/>
     </Grid>
     <Page.BottomAppBar>
-        <CommandBar IsOpen="False">
+        <CommandBar IsOpen="True">
+            <CommandBar.DataContext>
+                <viewModel:AddNightlifeViewModel/>
+            </CommandBar.DataContext>
             <AppBarButton x:Name="profileLoginButton" Icon="Contact" Label="Log In" Click="profileLoginButton_Click"/>
             <AppBarButton x:Name="profileCreateButton" Icon="AddFriend" Label="Create User" Click="profileCreateButton_Click"/>
             <AppBarSeparator/>
             <AppBarButton x:Name="addCommandButton" Icon="Add" Label="Add Item" Click="addCommandButton_Click">
-                <AppBarButton.DataContext>
-                    <viewModel:AddNightlifeViewModel/>
-                </AppBarButton.DataContext>
                 <Button.Flyout>
                     <Flyout>
                         <StackPanel Width="406">
@@ -87,41 +87,12 @@
                            Margin="0,0,0,10"  />
                             <TextBox x:Name="descriptionAddXMLTextbox" Text="{Binding NewNightlife.Description, Mode=TwoWay}" />
                             <Button x:Name="addXMLButton" Content="Send" HorizontalAlignment="Right"
-                            FontSize="16" Margin="0,10,0,0"  Command="{Binding AddNewNightlife}"/>
+                        FontSize="16" Margin="0,10,0,0"  Command="{Binding AddNewNightlife, Mode=TwoWay}"/>
                         </StackPanel>
                     </Flyout>
                 </Button.Flyout>
             </AppBarButton>
-            <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit">
-                <AppBarButton.DataContext>
-                    <viewModel:EditNightlifeViewModel/>
-                </AppBarButton.DataContext>
-                <Button.Flyout>
-                    <Flyout>
-                        <StackPanel Width="406">
-                            <ListView Height="103" Margin="0,0,266,0" ItemsSource="{Binding NightlifeList}" SelectedItem="{Binding SelectedNightlifeModel, Mode=TwoWay}"/>
-                            <TextBlock Text="Edit the 'Name' for the Restaurant:" FontSize="16"
-                           FontWeight="SemiLight" FontFamily="Segoe UI"
-                           Margin="0,0,0,10"  />
-                            <TextBox Text="{Binding SelectedNightlifeModel.Name, Mode=TwoWay}"/>
-                            <TextBlock Text="Edit the 'Address' for the Restaurant:" FontSize="16"
-                           FontWeight="SemiLight" FontFamily="Segoe UI"
-                           Margin="0,0,0,10"  />
-                            <TextBox Text="{Binding SelectedNightlifeModel.Address, Mode=TwoWay}" />
-                            <TextBlock Text="Edit the 'Url' for the Restaurant:" FontSize="16"
-                           FontWeight="SemiLight" FontFamily="Segoe UI"
-                           Margin="0,0,0,10"  />
-                            <TextBox Text="{Binding SelectedNightlifeModel.Url, Mode=TwoWay}" />
-                            <TextBlock Text="Edit the 'Description' for the Restaurant:" FontSize="16"
-                           FontWeight="SemiLight" FontFamily="Segoe UI"
-                           Margin="0,0,0,10"  />
-                            <TextBox Text="{Binding SelectedNightlifeModel.Description, Mode=TwoWay}" />
-                            <Button Content="Edit" HorizontalAlignment="Right"
-                            FontSize="16" Margin="0,10,0,0"  Command="{Binding EditSelectedNightlifeModel}"/>
-                        </StackPanel>
-                    </Flyout>
-                </Button.Flyout>
-            </AppBarButton>
+            <AppBarButton x:Name="editCommandButton" Icon="Edit" Label="Edit" Click="editCommandButton_Click"/>
             <AppBarButton x:Name="removeCommandButton" Icon="Remove" Label="Remove" Click="removeCommandButton_Click"/>
         </CommandBar>
     </Page.BottomAppBar>
