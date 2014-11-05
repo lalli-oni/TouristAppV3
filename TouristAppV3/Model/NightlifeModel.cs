@@ -10,49 +10,60 @@ using TouristAppV3.Annotations;
 
 namespace TouristAppV3.Model
 {
-    class NightlifeModel : PlacesModel
+    internal class NightlifeModel : PlacesModel
     {
 
         #region Variables
-        private string _name;
-        private string _address;
-        private string _url;
-        private string _description;
+
+        private PlacesModel _name;
+        private PlacesModel _address;
+        private PlacesModel _url;
+        private PlacesModel _description;
+
+
+        //private string _name;
+        //private string _address;
+        //private string _url;
+        //private string _description;
+
         #endregion
 
-        #region Properties
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
+        //#region Properties
 
-        public string Address
-        {
-            get { return _address; }
-            set { _address = value; }
-        }
+        //public string Name
+        //{
+        //    get { return _name; }
+        //    set { _name = value; }
+        //}
 
-        public string Url
-        {
-            get { return _url; }
-            set { _url = value; }
-        }
+        //public string Address
+        //{
+        //    get { return _address; }
+        //    set { _address = value; }
+        //}
 
-        public string Description
-        {
-            get { return _description; }
-            set { _description = value; }
-        }
-        #endregion
+        //public string Url
+        //{
+        //    get { return _url; }
+        //    set { _url = value; }
+        //}
 
-        //Does it work to have the method only in Superclass?
-        public override string ToString()
-        {
-            return Name.ToString();
-        }
+        //public string Description
+        //{
+        //    get { return _description; }
+        //    set { _description = value; }
+        //}
+        //#endregion
+
+        ////Does it work to have the method only in Superclass?
+        ////no I cannot get it to work
+        //public override string ToString()
+        //{
+        //    return Name.ToString();
+        //}
 
         #region INotify
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -61,6 +72,7 @@ namespace TouristAppV3.Model
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         }
-#endregion
+
+        #endregion
     }
 }

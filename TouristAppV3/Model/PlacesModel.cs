@@ -10,17 +10,21 @@ using TouristAppV3.Annotations;
 
 namespace TouristAppV3.Model
 {
-    class PlacesModel : INotifyPropertyChanged
+    internal class PlacesModel : INotifyPropertyChanged
     {
 
         #region Variables
-        private string _name;
-        private string _address;
-        private string _url;
-        private string _description;
+
+        public string _name;
+        public string _address;
+        public string _url;
+        public string _description;
+        public string _group;
+
         #endregion
 
         #region Properties
+
         public string Name
         {
             get { return _name; }
@@ -44,9 +48,16 @@ namespace TouristAppV3.Model
             get { return _description; }
             set { _description = value; }
         }
+
+        public string Group
+        {
+            get { return _group; }
+            set { _group = value; }
+        }
+
         #endregion
 
-        public override string ToString()
+    public override string ToString()
         {
             return Name.ToString();
         }
