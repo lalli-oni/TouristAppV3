@@ -27,6 +27,7 @@ namespace TouristAppV3.ViewModel
         private ICommand _addNewNightlife;
         private ICommand _removeSelectedNightlife;
         private ICommand _editNightlife;
+       // private XmlReader mainReader;
 
         #endregion
 
@@ -101,14 +102,26 @@ namespace TouristAppV3.ViewModel
             //n6.Url = "http://www.gustav-wieds-vinstue.dk/";
 
             #endregion
-
+            XmlReader mainReader = new XmlReader();
 
             _nightlifes = new ObservableCollection<NightlifeModel>();
             _newNightlifeModel = new NightlifeModel();
-            LoadNightlifeModels();
-            
+            mainReader.XmlRead();
+
+            foreach (NightlifeModel nightlifeModel in mainReader.populateList)
+            {
+                _nightlifes.Add(nightlifeModel);
+            }
+
+            _selectedNightlifeModel = _nightlifes[0];
+            OnPropertyChanged("Nightlifes");
+
+
+           // mainReader.ReadModels;
             _addNewNightlife = new RelayCommand(AddNightlife);
             _removeSelectedNightlife = new RelayCommand(RemoveNightlife);
+            OnPropertyChanged("Nightlifes");
+            
         }
         #endregion
 
