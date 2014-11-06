@@ -124,51 +124,49 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[21];
-            _typeNameTable[0] = "TouristAppV3.View.AdminPage";
-            _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "TouristAppV3.Common.ObservableDictionary";
-            _typeNameTable[4] = "Object";
-            _typeNameTable[5] = "String";
-            _typeNameTable[6] = "TouristAppV3.Common.NavigationHelper";
-            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[8] = "TouristAppV3.View.ItemDetailView";
-            _typeNameTable[9] = "TouristAppV3.ViewModel.MainViewModel";
-            _typeNameTable[10] = "System.Collections.ObjectModel.ObservableCollection`1<TouristAppV3.Model.NightlifeModel>";
-            _typeNameTable[11] = "System.Collections.ObjectModel.Collection`1<TouristAppV3.Model.NightlifeModel>";
-            _typeNameTable[12] = "TouristAppV3.Model.NightlifeModel";
-            _typeNameTable[13] = "TouristAppV3.Model.PlacesModel";
-            _typeNameTable[14] = "System.Windows.Input.ICommand";
-            _typeNameTable[15] = "TouristAppV3.ViewModel.EditNightlifeViewModel";
-            _typeNameTable[16] = "TouristAppV3.ViewModel.AddNightlifeViewModel";
-            _typeNameTable[17] = "TouristAppV3.View.MainPage";
-            _typeNameTable[18] = "TouristAppV3.View.ProfileCreateView";
-            _typeNameTable[19] = "TouristAppV3.View.ProfileLoginView";
-            _typeNameTable[20] = "TouristAppV3.View.UserProfileView";
+            _typeNameTable = new string[20];
+            _typeNameTable[0] = "TouristAppV3.ViewModel.MainViewModel";
+            _typeNameTable[1] = "Object";
+            _typeNameTable[2] = "System.Collections.ObjectModel.ObservableCollection`1<TouristAppV3.Model.NightlifeModel>";
+            _typeNameTable[3] = "System.Collections.ObjectModel.Collection`1<TouristAppV3.Model.NightlifeModel>";
+            _typeNameTable[4] = "TouristAppV3.Model.NightlifeModel";
+            _typeNameTable[5] = "TouristAppV3.Model.PlacesModel";
+            _typeNameTable[6] = "String";
+            _typeNameTable[7] = "System.Windows.Input.ICommand";
+            _typeNameTable[8] = "TouristAppV3.ViewModel.EditNightlifeViewModel";
+            _typeNameTable[9] = "TouristAppV3.ViewModel.AddNightlifeViewModel";
+            _typeNameTable[10] = "Windows.Storage.StorageFile";
+            _typeNameTable[11] = "TouristAppV3.View.MainPage";
+            _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[13] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[14] = "TouristAppV3.Common.ObservableDictionary";
+            _typeNameTable[15] = "TouristAppV3.Common.NavigationHelper";
+            _typeNameTable[16] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[17] = "TouristAppV3.View.ProfileCreateView";
+            _typeNameTable[18] = "TouristAppV3.View.ProfileLoginView";
+            _typeNameTable[19] = "TouristAppV3.View.UserProfileView";
 
-            _typeTable = new global::System.Type[21];
-            _typeTable[0] = typeof(global::TouristAppV3.View.AdminPage);
-            _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::TouristAppV3.Common.ObservableDictionary);
-            _typeTable[4] = typeof(global::System.Object);
-            _typeTable[5] = typeof(global::System.String);
-            _typeTable[6] = typeof(global::TouristAppV3.Common.NavigationHelper);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[8] = typeof(global::TouristAppV3.View.ItemDetailView);
-            _typeTable[9] = typeof(global::TouristAppV3.ViewModel.MainViewModel);
-            _typeTable[10] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::TouristAppV3.Model.NightlifeModel>);
-            _typeTable[11] = typeof(global::System.Collections.ObjectModel.Collection<global::TouristAppV3.Model.NightlifeModel>);
-            _typeTable[12] = typeof(global::TouristAppV3.Model.NightlifeModel);
-            _typeTable[13] = typeof(global::TouristAppV3.Model.PlacesModel);
-            _typeTable[14] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[15] = typeof(global::TouristAppV3.ViewModel.EditNightlifeViewModel);
-            _typeTable[16] = typeof(global::TouristAppV3.ViewModel.AddNightlifeViewModel);
-            _typeTable[17] = typeof(global::TouristAppV3.View.MainPage);
-            _typeTable[18] = typeof(global::TouristAppV3.View.ProfileCreateView);
-            _typeTable[19] = typeof(global::TouristAppV3.View.ProfileLoginView);
-            _typeTable[20] = typeof(global::TouristAppV3.View.UserProfileView);
+            _typeTable = new global::System.Type[20];
+            _typeTable[0] = typeof(global::TouristAppV3.ViewModel.MainViewModel);
+            _typeTable[1] = typeof(global::System.Object);
+            _typeTable[2] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::TouristAppV3.Model.NightlifeModel>);
+            _typeTable[3] = typeof(global::System.Collections.ObjectModel.Collection<global::TouristAppV3.Model.NightlifeModel>);
+            _typeTable[4] = typeof(global::TouristAppV3.Model.NightlifeModel);
+            _typeTable[5] = typeof(global::TouristAppV3.Model.PlacesModel);
+            _typeTable[6] = typeof(global::System.String);
+            _typeTable[7] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[8] = typeof(global::TouristAppV3.ViewModel.EditNightlifeViewModel);
+            _typeTable[9] = typeof(global::TouristAppV3.ViewModel.AddNightlifeViewModel);
+            _typeTable[10] = typeof(global::Windows.Storage.StorageFile);
+            _typeTable[11] = typeof(global::TouristAppV3.View.MainPage);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[14] = typeof(global::TouristAppV3.Common.ObservableDictionary);
+            _typeTable[15] = typeof(global::TouristAppV3.Common.NavigationHelper);
+            _typeTable[16] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[17] = typeof(global::TouristAppV3.View.ProfileCreateView);
+            _typeTable[18] = typeof(global::TouristAppV3.View.ProfileLoginView);
+            _typeTable[19] = typeof(global::TouristAppV3.View.UserProfileView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -203,38 +201,36 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_AdminPage() { return new global::TouristAppV3.View.AdminPage(); }
-        private object Activate_3_ObservableDictionary() { return new global::TouristAppV3.Common.ObservableDictionary(); }
-        private object Activate_8_ItemDetailView() { return new global::TouristAppV3.View.ItemDetailView(); }
-        private object Activate_9_MainViewModel() { return new global::TouristAppV3.ViewModel.MainViewModel(); }
-        private object Activate_10_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TouristAppV3.Model.NightlifeModel>(); }
-        private object Activate_11_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TouristAppV3.Model.NightlifeModel>(); }
-        private object Activate_12_NightlifeModel() { return new global::TouristAppV3.Model.NightlifeModel(); }
-        private object Activate_13_PlacesModel() { return new global::TouristAppV3.Model.PlacesModel(); }
-        private object Activate_15_EditNightlifeViewModel() { return new global::TouristAppV3.ViewModel.EditNightlifeViewModel(); }
-        private object Activate_16_AddNightlifeViewModel() { return new global::TouristAppV3.ViewModel.AddNightlifeViewModel(); }
-        private object Activate_17_MainPage() { return new global::TouristAppV3.View.MainPage(); }
-        private object Activate_18_ProfileCreateView() { return new global::TouristAppV3.View.ProfileCreateView(); }
-        private object Activate_19_ProfileLoginView() { return new global::TouristAppV3.View.ProfileLoginView(); }
-        private object Activate_20_UserProfileView() { return new global::TouristAppV3.View.UserProfileView(); }
-        private void MapAdd_3_ObservableDictionary(object instance, object key, object item)
+        private object Activate_0_MainViewModel() { return new global::TouristAppV3.ViewModel.MainViewModel(); }
+        private object Activate_2_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TouristAppV3.Model.NightlifeModel>(); }
+        private object Activate_3_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TouristAppV3.Model.NightlifeModel>(); }
+        private object Activate_4_NightlifeModel() { return new global::TouristAppV3.Model.NightlifeModel(); }
+        private object Activate_5_PlacesModel() { return new global::TouristAppV3.Model.PlacesModel(); }
+        private object Activate_8_EditNightlifeViewModel() { return new global::TouristAppV3.ViewModel.EditNightlifeViewModel(); }
+        private object Activate_9_AddNightlifeViewModel() { return new global::TouristAppV3.ViewModel.AddNightlifeViewModel(); }
+        private object Activate_11_MainPage() { return new global::TouristAppV3.View.MainPage(); }
+        private object Activate_14_ObservableDictionary() { return new global::TouristAppV3.Common.ObservableDictionary(); }
+        private object Activate_17_ProfileCreateView() { return new global::TouristAppV3.View.ProfileCreateView(); }
+        private object Activate_18_ProfileLoginView() { return new global::TouristAppV3.View.ProfileLoginView(); }
+        private object Activate_19_UserProfileView() { return new global::TouristAppV3.View.UserProfileView(); }
+        private void VectorAdd_2_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TouristAppV3.Model.NightlifeModel>)instance;
+            var newItem = (global::TouristAppV3.Model.NightlifeModel)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_3_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::TouristAppV3.Model.NightlifeModel>)instance;
+            var newItem = (global::TouristAppV3.Model.NightlifeModel)item;
+            collection.Add(newItem);
+        }
+        private void MapAdd_14_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
             var newKey = (global::System.String)key;
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
-        }
-        private void VectorAdd_10_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::TouristAppV3.Model.NightlifeModel>)instance;
-            var newItem = (global::TouristAppV3.Model.NightlifeModel)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_11_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::TouristAppV3.Model.NightlifeModel>)instance;
-            var newItem = (global::TouristAppV3.Model.NightlifeModel)item;
-            collection.Add(newItem);
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
@@ -247,62 +243,9 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  TouristAppV3.View.AdminPage
-                userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_AdminPage;
-                userType.AddMemberName("DefaultViewModel");
-                userType.AddMemberName("NavigationHelper");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 1:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 2:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 3:   //  TouristAppV3.Common.ObservableDictionary
+            case 0:   //  TouristAppV3.ViewModel.MainViewModel
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.DictionaryAdd = MapAdd_3_ObservableDictionary;
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Object
-                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  String
-                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  TouristAppV3.Common.NavigationHelper
-                userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  Windows.UI.Xaml.DependencyObject
-                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 8:   //  TouristAppV3.View.ItemDetailView
-                userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_ItemDetailView;
-                userType.AddMemberName("DefaultViewModel");
-                userType.AddMemberName("NavigationHelper");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 9:   //  TouristAppV3.ViewModel.MainViewModel
-                userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_MainViewModel;
+                userType.Activator = Activate_0_MainViewModel;
                 userType.AddMemberName("Nightlifes");
                 userType.AddMemberName("EditNightlife");
                 userType.AddMemberName("RemoveSelectedNightlife");
@@ -313,30 +256,34 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  System.Collections.ObjectModel.ObservableCollection`1<TouristAppV3.Model.NightlifeModel>
+            case 1:   //  Object
+                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 2:   //  System.Collections.ObjectModel.ObservableCollection`1<TouristAppV3.Model.NightlifeModel>
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<TouristAppV3.Model.NightlifeModel>"));
-                userType.CollectionAdd = VectorAdd_10_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_2_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 11:   //  System.Collections.ObjectModel.Collection`1<TouristAppV3.Model.NightlifeModel>
+            case 3:   //  System.Collections.ObjectModel.Collection`1<TouristAppV3.Model.NightlifeModel>
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_11_Collection;
-                userType.CollectionAdd = VectorAdd_11_Collection;
+                userType.Activator = Activate_3_Collection;
+                userType.CollectionAdd = VectorAdd_3_Collection;
                 xamlType = userType;
                 break;
 
-            case 12:   //  TouristAppV3.Model.NightlifeModel
+            case 4:   //  TouristAppV3.Model.NightlifeModel
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("TouristAppV3.Model.PlacesModel"));
-                userType.Activator = Activate_12_NightlifeModel;
+                userType.Activator = Activate_4_NightlifeModel;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  TouristAppV3.Model.PlacesModel
+            case 5:   //  TouristAppV3.Model.PlacesModel
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_13_PlacesModel;
+                userType.Activator = Activate_5_PlacesModel;
                 userType.AddMemberName("Name");
                 userType.AddMemberName("Address");
                 userType.AddMemberName("Url");
@@ -346,15 +293,19 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  System.Windows.Input.ICommand
+            case 6:   //  String
+                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  System.Windows.Input.ICommand
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  TouristAppV3.ViewModel.EditNightlifeViewModel
+            case 8:   //  TouristAppV3.ViewModel.EditNightlifeViewModel
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_15_EditNightlifeViewModel;
+                userType.Activator = Activate_8_EditNightlifeViewModel;
                 userType.AddMemberName("SelectedNightlifeModel");
                 userType.AddMemberName("selectedName");
                 userType.AddMemberName("EditSelectedNightlifeModel");
@@ -363,45 +314,80 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 16:   //  TouristAppV3.ViewModel.AddNightlifeViewModel
+            case 9:   //  TouristAppV3.ViewModel.AddNightlifeViewModel
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_16_AddNightlifeViewModel;
+                userType.Activator = Activate_9_AddNightlifeViewModel;
+                userType.AddMemberName("SelectedFile");
+                userType.AddMemberName("FilePickerCommand");
                 userType.AddMemberName("NewNightlife");
                 userType.AddMemberName("AddNewNightlife");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  TouristAppV3.View.MainPage
+            case 10:   //  Windows.Storage.StorageFile
+                userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 11:   //  TouristAppV3.View.MainPage
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_MainPage;
+                userType.Activator = Activate_11_MainPage;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  TouristAppV3.View.ProfileCreateView
+            case 12:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  TouristAppV3.Common.ObservableDictionary
+                userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.DictionaryAdd = MapAdd_14_ObservableDictionary;
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 15:   //  TouristAppV3.Common.NavigationHelper
+                userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 16:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 17:   //  TouristAppV3.View.ProfileCreateView
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_ProfileCreateView;
+                userType.Activator = Activate_17_ProfileCreateView;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  TouristAppV3.View.ProfileLoginView
+            case 18:   //  TouristAppV3.View.ProfileLoginView
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_ProfileLoginView;
+                userType.Activator = Activate_18_ProfileLoginView;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  TouristAppV3.View.UserProfileView
+            case 19:   //  TouristAppV3.View.UserProfileView
                 userType = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_UserProfileView;
+                userType.Activator = Activate_19_UserProfileView;
                 userType.AddMemberName("DefaultViewModel");
                 userType.AddMemberName("NavigationHelper");
                 userType.SetIsLocalType();
@@ -412,232 +398,232 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
         }
 
 
-        private object get_0_AdminPage_DefaultViewModel(object instance)
-        {
-            var that = (global::TouristAppV3.View.AdminPage)instance;
-            return that.DefaultViewModel;
-        }
-        private object get_1_AdminPage_NavigationHelper(object instance)
-        {
-            var that = (global::TouristAppV3.View.AdminPage)instance;
-            return that.NavigationHelper;
-        }
-        private object get_2_ItemDetailView_DefaultViewModel(object instance)
-        {
-            var that = (global::TouristAppV3.View.ItemDetailView)instance;
-            return that.DefaultViewModel;
-        }
-        private object get_3_ItemDetailView_NavigationHelper(object instance)
-        {
-            var that = (global::TouristAppV3.View.ItemDetailView)instance;
-            return that.NavigationHelper;
-        }
-        private object get_4_MainViewModel_Nightlifes(object instance)
+        private object get_0_MainViewModel_Nightlifes(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             return that.Nightlifes;
         }
-        private void set_4_MainViewModel_Nightlifes(object instance, object Value)
+        private void set_0_MainViewModel_Nightlifes(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             that.Nightlifes = (global::System.Collections.ObjectModel.ObservableCollection<global::TouristAppV3.Model.NightlifeModel>)Value;
         }
-        private object get_5_PlacesModel_Name(object instance)
+        private object get_1_PlacesModel_Name(object instance)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             return that.Name;
         }
-        private void set_5_PlacesModel_Name(object instance, object Value)
+        private void set_1_PlacesModel_Name(object instance, object Value)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             that.Name = (global::System.String)Value;
         }
-        private object get_6_PlacesModel_Address(object instance)
+        private object get_2_PlacesModel_Address(object instance)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             return that.Address;
         }
-        private void set_6_PlacesModel_Address(object instance, object Value)
+        private void set_2_PlacesModel_Address(object instance, object Value)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             that.Address = (global::System.String)Value;
         }
-        private object get_7_PlacesModel_Url(object instance)
+        private object get_3_PlacesModel_Url(object instance)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             return that.Url;
         }
-        private void set_7_PlacesModel_Url(object instance, object Value)
+        private void set_3_PlacesModel_Url(object instance, object Value)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             that.Url = (global::System.String)Value;
         }
-        private object get_8_PlacesModel_Description(object instance)
+        private object get_4_PlacesModel_Description(object instance)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             return that.Description;
         }
-        private void set_8_PlacesModel_Description(object instance, object Value)
+        private void set_4_PlacesModel_Description(object instance, object Value)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_9_PlacesModel_Group(object instance)
+        private object get_5_PlacesModel_Group(object instance)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             return that.Group;
         }
-        private void set_9_PlacesModel_Group(object instance, object Value)
+        private void set_5_PlacesModel_Group(object instance, object Value)
         {
             var that = (global::TouristAppV3.Model.PlacesModel)instance;
             that.Group = (global::System.String)Value;
         }
-        private object get_10_MainViewModel_EditNightlife(object instance)
+        private object get_6_MainViewModel_EditNightlife(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             return that.EditNightlife;
         }
-        private void set_10_MainViewModel_EditNightlife(object instance, object Value)
+        private void set_6_MainViewModel_EditNightlife(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             that.EditNightlife = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_11_MainViewModel_RemoveSelectedNightlife(object instance)
+        private object get_7_MainViewModel_RemoveSelectedNightlife(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             return that.RemoveSelectedNightlife;
         }
-        private void set_11_MainViewModel_RemoveSelectedNightlife(object instance, object Value)
+        private void set_7_MainViewModel_RemoveSelectedNightlife(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             that.RemoveSelectedNightlife = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_12_MainViewModel_AddNewNightlife(object instance)
+        private object get_8_MainViewModel_AddNewNightlife(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             return that.AddNewNightlife;
         }
-        private void set_12_MainViewModel_AddNewNightlife(object instance, object Value)
+        private void set_8_MainViewModel_AddNewNightlife(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             that.AddNewNightlife = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_13_MainViewModel_NewNightlifeModel(object instance)
+        private object get_9_MainViewModel_NewNightlifeModel(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             return that.NewNightlifeModel;
         }
-        private void set_13_MainViewModel_NewNightlifeModel(object instance, object Value)
+        private void set_9_MainViewModel_NewNightlifeModel(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             that.NewNightlifeModel = (global::TouristAppV3.Model.NightlifeModel)Value;
         }
-        private object get_14_MainViewModel_SelectedNightlifeModel(object instance)
+        private object get_10_MainViewModel_SelectedNightlifeModel(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             return that.SelectedNightlifeModel;
         }
-        private void set_14_MainViewModel_SelectedNightlifeModel(object instance, object Value)
+        private void set_10_MainViewModel_SelectedNightlifeModel(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.MainViewModel)instance;
             that.SelectedNightlifeModel = (global::TouristAppV3.Model.NightlifeModel)Value;
         }
-        private object get_15_EditNightlifeViewModel_SelectedNightlifeModel(object instance)
+        private object get_11_EditNightlifeViewModel_SelectedNightlifeModel(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             return that.SelectedNightlifeModel;
         }
-        private void set_15_EditNightlifeViewModel_SelectedNightlifeModel(object instance, object Value)
+        private void set_11_EditNightlifeViewModel_SelectedNightlifeModel(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             that.SelectedNightlifeModel = (global::TouristAppV3.Model.NightlifeModel)Value;
         }
-        private object get_16_EditNightlifeViewModel_selectedName(object instance)
+        private object get_12_EditNightlifeViewModel_selectedName(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             return that.selectedName;
         }
-        private void set_16_EditNightlifeViewModel_selectedName(object instance, object Value)
+        private void set_12_EditNightlifeViewModel_selectedName(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             that.selectedName = (global::System.String)Value;
         }
-        private object get_17_EditNightlifeViewModel_EditSelectedNightlifeModel(object instance)
+        private object get_13_EditNightlifeViewModel_EditSelectedNightlifeModel(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             return that.EditSelectedNightlifeModel;
         }
-        private void set_17_EditNightlifeViewModel_EditSelectedNightlifeModel(object instance, object Value)
+        private void set_13_EditNightlifeViewModel_EditSelectedNightlifeModel(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             that.EditSelectedNightlifeModel = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_18_EditNightlifeViewModel_NightlifeList(object instance)
+        private object get_14_EditNightlifeViewModel_NightlifeList(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             return that.NightlifeList;
         }
-        private void set_18_EditNightlifeViewModel_NightlifeList(object instance, object Value)
+        private void set_14_EditNightlifeViewModel_NightlifeList(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.EditNightlifeViewModel)instance;
             that.NightlifeList = (global::System.Collections.ObjectModel.ObservableCollection<global::TouristAppV3.Model.NightlifeModel>)Value;
         }
-        private object get_19_AddNightlifeViewModel_NewNightlife(object instance)
+        private object get_15_AddNightlifeViewModel_SelectedFile(object instance)
+        {
+            var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
+            return that.SelectedFile;
+        }
+        private void set_15_AddNightlifeViewModel_SelectedFile(object instance, object Value)
+        {
+            var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
+            that.SelectedFile = (global::Windows.Storage.StorageFile)Value;
+        }
+        private object get_16_AddNightlifeViewModel_FilePickerCommand(object instance)
+        {
+            var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
+            return that.FilePickerCommand;
+        }
+        private void set_16_AddNightlifeViewModel_FilePickerCommand(object instance, object Value)
+        {
+            var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
+            that.FilePickerCommand = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_17_AddNightlifeViewModel_NewNightlife(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
             return that.NewNightlife;
         }
-        private void set_19_AddNightlifeViewModel_NewNightlife(object instance, object Value)
+        private void set_17_AddNightlifeViewModel_NewNightlife(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
             that.NewNightlife = (global::TouristAppV3.Model.NightlifeModel)Value;
         }
-        private object get_20_AddNightlifeViewModel_AddNewNightlife(object instance)
+        private object get_18_AddNightlifeViewModel_AddNewNightlife(object instance)
         {
             var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
             return that.AddNewNightlife;
         }
-        private void set_20_AddNightlifeViewModel_AddNewNightlife(object instance, object Value)
+        private void set_18_AddNightlifeViewModel_AddNewNightlife(object instance, object Value)
         {
             var that = (global::TouristAppV3.ViewModel.AddNightlifeViewModel)instance;
             that.AddNewNightlife = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_21_MainPage_DefaultViewModel(object instance)
+        private object get_19_MainPage_DefaultViewModel(object instance)
         {
             var that = (global::TouristAppV3.View.MainPage)instance;
             return that.DefaultViewModel;
         }
-        private object get_22_MainPage_NavigationHelper(object instance)
+        private object get_20_MainPage_NavigationHelper(object instance)
         {
             var that = (global::TouristAppV3.View.MainPage)instance;
             return that.NavigationHelper;
         }
-        private object get_23_ProfileCreateView_DefaultViewModel(object instance)
+        private object get_21_ProfileCreateView_DefaultViewModel(object instance)
         {
             var that = (global::TouristAppV3.View.ProfileCreateView)instance;
             return that.DefaultViewModel;
         }
-        private object get_24_ProfileCreateView_NavigationHelper(object instance)
+        private object get_22_ProfileCreateView_NavigationHelper(object instance)
         {
             var that = (global::TouristAppV3.View.ProfileCreateView)instance;
             return that.NavigationHelper;
         }
-        private object get_25_ProfileLoginView_DefaultViewModel(object instance)
+        private object get_23_ProfileLoginView_DefaultViewModel(object instance)
         {
             var that = (global::TouristAppV3.View.ProfileLoginView)instance;
             return that.DefaultViewModel;
         }
-        private object get_26_ProfileLoginView_NavigationHelper(object instance)
+        private object get_24_ProfileLoginView_NavigationHelper(object instance)
         {
             var that = (global::TouristAppV3.View.ProfileLoginView)instance;
             return that.NavigationHelper;
         }
-        private object get_27_UserProfileView_DefaultViewModel(object instance)
+        private object get_25_UserProfileView_DefaultViewModel(object instance)
         {
             var that = (global::TouristAppV3.View.UserProfileView)instance;
             return that.DefaultViewModel;
         }
-        private object get_28_UserProfileView_NavigationHelper(object instance)
+        private object get_26_UserProfileView_NavigationHelper(object instance)
         {
             var that = (global::TouristAppV3.View.UserProfileView)instance;
             return that.NavigationHelper;
@@ -650,178 +636,166 @@ namespace TouristAppV3.TouristAppV3_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "TouristAppV3.View.AdminPage.DefaultViewModel":
-                userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.AdminPage");
-                xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "TouristAppV3.Common.ObservableDictionary");
-                xamlMember.Getter = get_0_AdminPage_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "TouristAppV3.View.AdminPage.NavigationHelper":
-                userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.AdminPage");
-                xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NavigationHelper", "TouristAppV3.Common.NavigationHelper");
-                xamlMember.Getter = get_1_AdminPage_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "TouristAppV3.View.ItemDetailView.DefaultViewModel":
-                userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.ItemDetailView");
-                xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "TouristAppV3.Common.ObservableDictionary");
-                xamlMember.Getter = get_2_ItemDetailView_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "TouristAppV3.View.ItemDetailView.NavigationHelper":
-                userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.ItemDetailView");
-                xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NavigationHelper", "TouristAppV3.Common.NavigationHelper");
-                xamlMember.Getter = get_3_ItemDetailView_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
             case "TouristAppV3.ViewModel.MainViewModel.Nightlifes":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.MainViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "Nightlifes", "System.Collections.ObjectModel.ObservableCollection`1<TouristAppV3.Model.NightlifeModel>");
-                xamlMember.Getter = get_4_MainViewModel_Nightlifes;
-                xamlMember.Setter = set_4_MainViewModel_Nightlifes;
+                xamlMember.Getter = get_0_MainViewModel_Nightlifes;
+                xamlMember.Setter = set_0_MainViewModel_Nightlifes;
                 break;
             case "TouristAppV3.Model.PlacesModel.Name":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.Model.PlacesModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_5_PlacesModel_Name;
-                xamlMember.Setter = set_5_PlacesModel_Name;
+                xamlMember.Getter = get_1_PlacesModel_Name;
+                xamlMember.Setter = set_1_PlacesModel_Name;
                 break;
             case "TouristAppV3.Model.PlacesModel.Address":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.Model.PlacesModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "Address", "String");
-                xamlMember.Getter = get_6_PlacesModel_Address;
-                xamlMember.Setter = set_6_PlacesModel_Address;
+                xamlMember.Getter = get_2_PlacesModel_Address;
+                xamlMember.Setter = set_2_PlacesModel_Address;
                 break;
             case "TouristAppV3.Model.PlacesModel.Url":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.Model.PlacesModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "Url", "String");
-                xamlMember.Getter = get_7_PlacesModel_Url;
-                xamlMember.Setter = set_7_PlacesModel_Url;
+                xamlMember.Getter = get_3_PlacesModel_Url;
+                xamlMember.Setter = set_3_PlacesModel_Url;
                 break;
             case "TouristAppV3.Model.PlacesModel.Description":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.Model.PlacesModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_8_PlacesModel_Description;
-                xamlMember.Setter = set_8_PlacesModel_Description;
+                xamlMember.Getter = get_4_PlacesModel_Description;
+                xamlMember.Setter = set_4_PlacesModel_Description;
                 break;
             case "TouristAppV3.Model.PlacesModel.Group":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.Model.PlacesModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "Group", "String");
-                xamlMember.Getter = get_9_PlacesModel_Group;
-                xamlMember.Setter = set_9_PlacesModel_Group;
+                xamlMember.Getter = get_5_PlacesModel_Group;
+                xamlMember.Setter = set_5_PlacesModel_Group;
                 break;
             case "TouristAppV3.ViewModel.MainViewModel.EditNightlife":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.MainViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "EditNightlife", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_10_MainViewModel_EditNightlife;
-                xamlMember.Setter = set_10_MainViewModel_EditNightlife;
+                xamlMember.Getter = get_6_MainViewModel_EditNightlife;
+                xamlMember.Setter = set_6_MainViewModel_EditNightlife;
                 break;
             case "TouristAppV3.ViewModel.MainViewModel.RemoveSelectedNightlife":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.MainViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "RemoveSelectedNightlife", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_11_MainViewModel_RemoveSelectedNightlife;
-                xamlMember.Setter = set_11_MainViewModel_RemoveSelectedNightlife;
+                xamlMember.Getter = get_7_MainViewModel_RemoveSelectedNightlife;
+                xamlMember.Setter = set_7_MainViewModel_RemoveSelectedNightlife;
                 break;
             case "TouristAppV3.ViewModel.MainViewModel.AddNewNightlife":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.MainViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "AddNewNightlife", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_12_MainViewModel_AddNewNightlife;
-                xamlMember.Setter = set_12_MainViewModel_AddNewNightlife;
+                xamlMember.Getter = get_8_MainViewModel_AddNewNightlife;
+                xamlMember.Setter = set_8_MainViewModel_AddNewNightlife;
                 break;
             case "TouristAppV3.ViewModel.MainViewModel.NewNightlifeModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.MainViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NewNightlifeModel", "TouristAppV3.Model.NightlifeModel");
-                xamlMember.Getter = get_13_MainViewModel_NewNightlifeModel;
-                xamlMember.Setter = set_13_MainViewModel_NewNightlifeModel;
+                xamlMember.Getter = get_9_MainViewModel_NewNightlifeModel;
+                xamlMember.Setter = set_9_MainViewModel_NewNightlifeModel;
                 break;
             case "TouristAppV3.ViewModel.MainViewModel.SelectedNightlifeModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.MainViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "SelectedNightlifeModel", "TouristAppV3.Model.NightlifeModel");
-                xamlMember.Getter = get_14_MainViewModel_SelectedNightlifeModel;
-                xamlMember.Setter = set_14_MainViewModel_SelectedNightlifeModel;
+                xamlMember.Getter = get_10_MainViewModel_SelectedNightlifeModel;
+                xamlMember.Setter = set_10_MainViewModel_SelectedNightlifeModel;
                 break;
             case "TouristAppV3.ViewModel.EditNightlifeViewModel.SelectedNightlifeModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.EditNightlifeViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "SelectedNightlifeModel", "TouristAppV3.Model.NightlifeModel");
-                xamlMember.Getter = get_15_EditNightlifeViewModel_SelectedNightlifeModel;
-                xamlMember.Setter = set_15_EditNightlifeViewModel_SelectedNightlifeModel;
+                xamlMember.Getter = get_11_EditNightlifeViewModel_SelectedNightlifeModel;
+                xamlMember.Setter = set_11_EditNightlifeViewModel_SelectedNightlifeModel;
                 break;
             case "TouristAppV3.ViewModel.EditNightlifeViewModel.selectedName":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.EditNightlifeViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "selectedName", "String");
-                xamlMember.Getter = get_16_EditNightlifeViewModel_selectedName;
-                xamlMember.Setter = set_16_EditNightlifeViewModel_selectedName;
+                xamlMember.Getter = get_12_EditNightlifeViewModel_selectedName;
+                xamlMember.Setter = set_12_EditNightlifeViewModel_selectedName;
                 break;
             case "TouristAppV3.ViewModel.EditNightlifeViewModel.EditSelectedNightlifeModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.EditNightlifeViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "EditSelectedNightlifeModel", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_17_EditNightlifeViewModel_EditSelectedNightlifeModel;
-                xamlMember.Setter = set_17_EditNightlifeViewModel_EditSelectedNightlifeModel;
+                xamlMember.Getter = get_13_EditNightlifeViewModel_EditSelectedNightlifeModel;
+                xamlMember.Setter = set_13_EditNightlifeViewModel_EditSelectedNightlifeModel;
                 break;
             case "TouristAppV3.ViewModel.EditNightlifeViewModel.NightlifeList":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.EditNightlifeViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NightlifeList", "System.Collections.ObjectModel.ObservableCollection`1<TouristAppV3.Model.NightlifeModel>");
-                xamlMember.Getter = get_18_EditNightlifeViewModel_NightlifeList;
-                xamlMember.Setter = set_18_EditNightlifeViewModel_NightlifeList;
+                xamlMember.Getter = get_14_EditNightlifeViewModel_NightlifeList;
+                xamlMember.Setter = set_14_EditNightlifeViewModel_NightlifeList;
+                break;
+            case "TouristAppV3.ViewModel.AddNightlifeViewModel.SelectedFile":
+                userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.AddNightlifeViewModel");
+                xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "SelectedFile", "Windows.Storage.StorageFile");
+                xamlMember.Getter = get_15_AddNightlifeViewModel_SelectedFile;
+                xamlMember.Setter = set_15_AddNightlifeViewModel_SelectedFile;
+                break;
+            case "TouristAppV3.ViewModel.AddNightlifeViewModel.FilePickerCommand":
+                userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.AddNightlifeViewModel");
+                xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "FilePickerCommand", "System.Windows.Input.ICommand");
+                xamlMember.Getter = get_16_AddNightlifeViewModel_FilePickerCommand;
+                xamlMember.Setter = set_16_AddNightlifeViewModel_FilePickerCommand;
                 break;
             case "TouristAppV3.ViewModel.AddNightlifeViewModel.NewNightlife":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.AddNightlifeViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NewNightlife", "TouristAppV3.Model.NightlifeModel");
-                xamlMember.Getter = get_19_AddNightlifeViewModel_NewNightlife;
-                xamlMember.Setter = set_19_AddNightlifeViewModel_NewNightlife;
+                xamlMember.Getter = get_17_AddNightlifeViewModel_NewNightlife;
+                xamlMember.Setter = set_17_AddNightlifeViewModel_NewNightlife;
                 break;
             case "TouristAppV3.ViewModel.AddNightlifeViewModel.AddNewNightlife":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.ViewModel.AddNightlifeViewModel");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "AddNewNightlife", "System.Windows.Input.ICommand");
-                xamlMember.Getter = get_20_AddNightlifeViewModel_AddNewNightlife;
-                xamlMember.Setter = set_20_AddNightlifeViewModel_AddNewNightlife;
+                xamlMember.Getter = get_18_AddNightlifeViewModel_AddNewNightlife;
+                xamlMember.Setter = set_18_AddNightlifeViewModel_AddNewNightlife;
                 break;
             case "TouristAppV3.View.MainPage.DefaultViewModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.MainPage");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "TouristAppV3.Common.ObservableDictionary");
-                xamlMember.Getter = get_21_MainPage_DefaultViewModel;
+                xamlMember.Getter = get_19_MainPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "TouristAppV3.View.MainPage.NavigationHelper":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.MainPage");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NavigationHelper", "TouristAppV3.Common.NavigationHelper");
-                xamlMember.Getter = get_22_MainPage_NavigationHelper;
+                xamlMember.Getter = get_20_MainPage_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "TouristAppV3.View.ProfileCreateView.DefaultViewModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.ProfileCreateView");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "TouristAppV3.Common.ObservableDictionary");
-                xamlMember.Getter = get_23_ProfileCreateView_DefaultViewModel;
+                xamlMember.Getter = get_21_ProfileCreateView_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "TouristAppV3.View.ProfileCreateView.NavigationHelper":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.ProfileCreateView");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NavigationHelper", "TouristAppV3.Common.NavigationHelper");
-                xamlMember.Getter = get_24_ProfileCreateView_NavigationHelper;
+                xamlMember.Getter = get_22_ProfileCreateView_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "TouristAppV3.View.ProfileLoginView.DefaultViewModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.ProfileLoginView");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "TouristAppV3.Common.ObservableDictionary");
-                xamlMember.Getter = get_25_ProfileLoginView_DefaultViewModel;
+                xamlMember.Getter = get_23_ProfileLoginView_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "TouristAppV3.View.ProfileLoginView.NavigationHelper":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.ProfileLoginView");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NavigationHelper", "TouristAppV3.Common.NavigationHelper");
-                xamlMember.Getter = get_26_ProfileLoginView_NavigationHelper;
+                xamlMember.Getter = get_24_ProfileLoginView_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "TouristAppV3.View.UserProfileView.DefaultViewModel":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.UserProfileView");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "TouristAppV3.Common.ObservableDictionary");
-                xamlMember.Getter = get_27_UserProfileView_DefaultViewModel;
+                xamlMember.Getter = get_25_UserProfileView_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "TouristAppV3.View.UserProfileView.NavigationHelper":
                 userType = (global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TouristAppV3.View.UserProfileView");
                 xamlMember = new global::TouristAppV3.TouristAppV3_XamlTypeInfo.XamlMember(this, "NavigationHelper", "TouristAppV3.Common.NavigationHelper");
-                xamlMember.Getter = get_28_UserProfileView_NavigationHelper;
+                xamlMember.Getter = get_26_UserProfileView_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             }

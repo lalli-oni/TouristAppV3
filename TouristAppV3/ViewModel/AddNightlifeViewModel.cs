@@ -19,7 +19,21 @@ namespace TouristAppV3.ViewModel
     {
         private NightlifeModel _newNightlife;
         private ICommand _addNewNightlife;
+        private CategoryModel _selectedcCategoryModel;
+        private StorageFile _selectedFile;
+        private ICommand _filePickerCommand;
 
+        public StorageFile SelectedFile
+        {
+            get { return _selectedFile; }
+            set { _selectedFile = value; }
+        }
+
+        public ICommand FilePickerCommand
+        {
+            get { return _filePickerCommand; }
+            set { _filePickerCommand = value; }
+        }
         public AddNightlifeViewModel()
         {
             _newNightlife = new NightlifeModel();
@@ -55,6 +69,7 @@ namespace TouristAppV3.ViewModel
             nightlife.Add(new XElement("address", NewNightlife.Address));
             nightlife.Add(new XElement("description", NewNightlife.Description));
             nightlife.Add(new XElement("url", NewNightlife.Url));
+            nightlife.Add(new XElement("group", _selectedcCategoryModel.Category));
 
             nightlifelist.LastNode.AddAfterSelf(nightlife);
 

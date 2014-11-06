@@ -15,6 +15,10 @@ namespace TouristAppV3.Model
         #region Variables
         private string _profileName;
         private string _profilePassword;
+
+        private int _colourGreen;
+        private int _colourRed;
+        private int _colourBlue;
         #endregion
 
         #region Properties
@@ -28,6 +32,22 @@ namespace TouristAppV3.Model
         {
             get { return _profilePassword; }
             set { _profilePassword = value; }
+        }
+
+        public int ColourGreen
+        {
+            get { return _colourGreen; }
+            set { _colourGreen = value; }
+        }
+        public int ColourBlue
+        {
+            get { return _colourBlue; }
+            set { _colourBlue = value; }
+        }
+        public int ColourRed
+        {
+            get { return _colourRed; }
+            set { _colourRed = value; }
         }
         #endregion
 

@@ -8,8 +8,6 @@ Assets\xml\Profiles.xml
 Assets\xml\Restaurants.xml
 App.xbf
 TouristAppV3.xr.xml
-View\AdminPage.xbf
-View\ItemDetailView.xbf
 View\MainPage.xbf
 View\ProfileCreateView.xbf
 View\ProfileLoginView.xbf

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Xml.Linq;
 using Windows.Storage;
+using Windows.UI.Xaml.Controls.Primitives;
 using TouristAppV3.Annotations;
 using TouristAppV3.Model;
 
@@ -80,6 +81,7 @@ namespace TouristAppV3.ViewModel
             OnPropertyChanged("Profiles");
             
         }
+   
 
         #endregion
 
