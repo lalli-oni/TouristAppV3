@@ -20,7 +20,7 @@ namespace TouristAppV3.ViewModel
         private NightlifeModel _selectedNightlifeModel;
         private ICommand _editSelectedNightlifeModel;
         private ObservableCollection<NightlifeModel> _nightlifeList;
-        private StorageFile file = null;
+        private StorageFolder _storageFolder = ApplicationData.Current.LocalFolder;
         private string _selectedName = "loading";
 
         #region Constructor
@@ -28,7 +28,7 @@ namespace TouristAppV3.ViewModel
         public EditNightlifeViewModel()
         {
             _nightlifeList = new ObservableCollection<NightlifeModel>();
-            LoadEditSelectionList();
+            //LoadEditSelectionList();
             _editSelectedNightlifeModel = new RelayCommand(EditSelectedNightlife);
         }
         #endregion
@@ -36,25 +36,31 @@ namespace TouristAppV3.ViewModel
         private async void EditSelectedNightlife()
         {
 
-            try
-            {
-                file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
-            }
-            catch (Exception)
-            {
-            }
+            //try
+            //{
+            //    file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
+            //}
+            //catch (Exception)
+            //{
+            //}
 
-            if (file == null)
-            {
-                StorageFolder installationFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-                string xmlFile = @"Assets\xml\allnightlife.xml";
-                file = await installationFolder.GetFileAsync(xmlFile);
-            }
+            //if (file == null)
+            //{
+            //    StorageFolder installationFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+            //    string xmlFile = @"Assets\xml\allnightlife.xml";
+            //    file = await installationFolder.GetFileAsync(xmlFile);
+            //}
 
-            Stream editStream = await file.OpenStreamForWriteAsync();
+            ////Makes Stream from the XmlFile
+            //Stream editStream = await file.OpenStreamForWriteAsync();
+            ////Makes XDocument from the Stream content
+            //XDocument editnightlifeDocument = XDocument.Load(editStream);
+
+            Stream editStream = await _storageFolder.OpenStreamForWriteAsync("nightlife.xml", CreationCollisionOption.ReplaceExisting);
+            StreamWriter editStreamWriter = new StreamWriter(editStream);
             XDocument editnightlifeDocument = XDocument.Load(editStream);
 
-
+            //Finds and replaces the Elements of the selected Object
             var targetElement = editnightlifeDocument.Element("nightlifemodels")
                 .Elements("nightlifemodel")
                 .Where(e => e.Element("name").Value == selectedName).Single();
@@ -66,6 +72,7 @@ namespace TouristAppV3.ViewModel
             await editStream.FlushAsync();
             editnightlifeDocument.Save(editStream);
             editStream.Dispose();
+            
 
                 //(new XElement("name",SelectedNightlifeModel.Name),
                 //new XElement("address",SelectedNightlifeModel.Address),
@@ -117,25 +124,29 @@ namespace TouristAppV3.ViewModel
 
         private async void LoadEditSelectionList()
         {
-            try
-            {
-                file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
-            }
-            catch (Exception)
-            {
-            }
+            //try
+            //{
+            //    file = await Windows.Storage.ApplicationData.Current.LocalFolder.GetFileAsync("nightlife.xml");
+            //}
+            //catch (Exception)
+            //{
+            //}
 
-            if (file == null)
-            {
-                StorageFolder installationFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-                string xmlFile = @"Assets\xml\allnightlife.xml";
-                file = await installationFolder.GetFileAsync(xmlFile);
-            }
+            //if (file == null)
+            //{
+            //    StorageFolder installationFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+            //    string xmlFile = @"Assets\xml\allnightlife.xml";
+            //    file = await installationFolder.GetFileAsync(xmlFile);
+            //}
 
-            Stream loadStream = await file.OpenStreamForReadAsync();
-            XDocument nightlifeDocument = XDocument.Load(loadStream);
+            //Stream loadStream = await file.OpenStreamForReadAsync();
+            //XDocument nightlifeDocument = XDocument.Load(loadStream);
 
-            loadStream.Dispose();
+            //loadStream.Dispose();
+
+            Stream readStream = await _storageFolder.OpenStreamForWriteAsync("nightlife.xml", CreationCollisionOption.ReplaceExisting);
+            StreamReader showStreamReader = new StreamReader(readStream);
+            XDocument nightlifeDocument = XDocument.Load(readStream);
 
             IEnumerable<XElement> nightlifelist = nightlifeDocument.Descendants("nightlifemodel");
 
