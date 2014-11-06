@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ONI-CHIBI</Machine>
+    <WindowsUser>Lalli</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>eedcac98-18ed-4a95-b0b0-bfe625d2e38d</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>9E5B42ABA488BFDC79BF01B87EBF09854EDBD10A0FD278F8E00E53853F41D7D6</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>eedcac98-18ed-4a95-b0b0-bfe625d2e38d_1.0.0.0_neutral__e3egvdvm3k9m4</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>eedcac98-18ed-4a95-b0b0-bfe625d2e38d_e3egvdvm3k9m4!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>eedcac98-18ed-4a95-b0b0-bfe625d2e38d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Lalli</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-11-06T13:33:46.866</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\TouristAppV3.exe">
+      <PackagePath>TouristAppV3.exe</PackagePath>
+      <Modified>2014-11-06T13:33:44.535</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T04:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\xml\allNightlife.xml">
+      <PackagePath>Assets\xml\allNightlife.xml</PackagePath>
+      <Modified>2014-10-31T09:57:47.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\xml\nightlife.xml">
+      <PackagePath>Assets\xml\nightlife.xml</PackagePath>
+      <Modified>2014-10-31T10:32:12.139</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\xml\Profiles.xml">
+      <PackagePath>Assets\xml\Profiles.xml</PackagePath>
+      <Modified>2014-10-30T10:22:15.579</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\Assets\xml\Restaurants.xml">
+      <PackagePath>Assets\xml\Restaurants.xml</PackagePath>
+      <Modified>2014-11-05T11:00:55.921</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2014-11-05T12:12:32.666</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\View\AdminPage.xbf">
+      <PackagePath>View\AdminPage.xbf</PackagePath>
+      <Modified>2014-11-05T12:12:32.666</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\View\ItemDetailView.xbf">
+      <PackagePath>View\ItemDetailView.xbf</PackagePath>
+      <Modified>2014-11-05T12:12:32.667</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\View\MainPage.xbf">
+      <PackagePath>View\MainPage.xbf</PackagePath>
+      <Modified>2014-11-05T12:12:32.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\View\ProfileCreateView.xbf">
+      <PackagePath>View\ProfileCreateView.xbf</PackagePath>
+      <Modified>2014-11-06T13:33:43.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\View\ProfileLoginView.xbf">
+      <PackagePath>View\ProfileLoginView.xbf</PackagePath>
+      <Modified>2014-11-06T13:33:43.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\View\UserProfileView.xbf">
+      <PackagePath>View\UserProfileView.xbf</PackagePath>
+      <Modified>2014-11-05T12:12:32.674</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\TouristAppV3.xr.xml">
+      <PackagePath>TouristAppV3.xr.xml</PackagePath>
+      <Modified>2014-11-06T13:14:50.057</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lalli\Documents\Visual Studio 2013\Projects\Semester1\TouristApp\TouristAppV3\TouristAppV3\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-11-06T13:33:45.618</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
